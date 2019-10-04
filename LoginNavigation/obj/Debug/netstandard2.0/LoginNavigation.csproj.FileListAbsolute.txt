@@ -1,0 +1,13 @@
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.deps.json
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.pdb
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.csprojAssemblyReference.cache
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/LoginPage.xaml.g.cs
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/SignUpPage.xaml.g.cs
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.AssemblyInfoInputs.cache
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.AssemblyInfo.cs
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.dll
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.pdb
+/Users/Sarah/Documents/Xamarin_Forms___LoginFlow/LoginNavigation/obj/Debug/netstandard2.0/Interests.xaml.g.cs
