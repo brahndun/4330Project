@@ -1,0 +1,15 @@
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.csprojAssemblyReference.cache
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/LoginPage.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/SignUpPage.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.AssemblyInfoInputs.cache
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.AssemblyInfo.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.deps.json
+/Users/Sarah/Projects/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
+/Users/Sarah/Projects/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.pdb
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.dll
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/LoginNavigation.pdb
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/ForgotPassword.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/NewPassword.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/VerificationCode.xaml.g.cs

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.VerificationCode">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center" Margin="64, 64, 64, 64">
+			<Label Text="Enter the verification code sent to your email address below" />
+			<Entry x:Name="codeEntry" Placeholder="Verification code" />
+            <Button Text="Confirm" Clicked="ConfirmCode"/>
+            <Label x:Name="messageLabel"/>
+		</StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,51 @@
+﻿<Properties StartupConfiguration="{F0AA2B49-1A31-4495-AACE-0DD5AAA80139}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginNavigation/App.cs">
+    <Files>
+      <File FileName="LoginNavigation/User.cs" Line="12" Column="2" />
+      <File FileName="LoginNavigation/LoginPage.xaml" Line="13" Column="69" />
+      <File FileName="LoginNavigation/LoginPage.xaml.cs" Line="31" Column="17" />
+      <File FileName="../../.nuget/packages/rg.plugins.popup/1.2.0.223/readme.txt" Line="14" Column="32" />
+      <File FileName="iOS/AppDelegate.cs" Line="16" Column="1" />
+      <File FileName="Droid/MainActivity.cs" Line="20" Column="55" />
+      <File FileName="Droid/ForgotPassword.cs" Line="17" Column="10" />
+      <File FileName="LoginNavigation/ForgotPassword.xaml" Line="4" Column="9" />
+      <File FileName="LoginNavigation/ForgotPassword.xaml.cs" Line="44" Column="21" />
+      <File FileName="LoginNavigation/SignUpPage.xaml" Line="1" Column="1" />
+      <File FileName="LoginNavigation/SignUpPage.xaml.cs" Line="31" Column="21" />
+      <File FileName="LoginNavigation/VerificationCode.xaml" Line="7" Column="56" />
+      <File FileName="LoginNavigation/VerificationCode.xaml.cs" Line="19" Column="14" />
+      <File FileName="LoginNavigation/Code.cs" Line="8" Column="46" />
+      <File FileName="LoginNavigation/NewPassword.xaml" Line="13" Column="1" />
+      <File FileName="LoginNavigation/NewPassword.xaml.cs" Line="30" Column="51" />
+      <File FileName="iOS/Main.cs" Line="17" Column="5" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="LoginNavigation/App.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LoginNavigation" expanded="True">
+            <Node name="LoginNavigation" expanded="True">
+              <Node name="App.cs" selected="True" />
+              <Node name="ForgotPassword.xaml" expanded="True" />
+              <Node name="LoginPage.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="NewPassword.xaml" expanded="True" />
+              <Node name="SignUpPage.xaml" expanded="True" />
+              <Node name="VerificationCode.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../LoginNavigation/NewPassword.xaml.cs" line="20" offsetX="-1" offsetY="-1" expression="user" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.LoginNavigation.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.9698CB0A-EC31-42FD-94A5-876DD753CA65" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
