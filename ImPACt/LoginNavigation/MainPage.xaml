@@ -1,11 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.MainPage" Title="Main Page">
-	<ContentPage.ToolbarItems>
-		<ToolbarItem Text="Logout" Clicked="OnLogoutButtonClicked" />
-	</ContentPage.ToolbarItems>
-	<ContentPage.Content>
-		<StackLayout>
-			<Label Text="Main app content goes here" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
-		</StackLayout>
-	</ContentPage.Content>
-</ContentPage>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:LoginNavigation;assembly=LoginNavigation" x:Class="LoginNavigation.MainPage">
+    <local:MatchesPage IconImageSource="matchicon2.png" Title="Matches"/>
+    <local:AssosciatesPage IconImageSource="associatesicon.png" Title="Associates" />
+    <local:FeedPage IconImageSource="feedicon.png" Title="Feed"/>
+    <local:SettingsPage IconImageSource="settingsicon.png" Title="Settings"/>
+</TabbedPage>

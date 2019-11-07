@@ -99,6 +99,10 @@
     <BundleResource Include="Resources\Icon-Small-40.png" />
     <BundleResource Include="Resources\Icon-Small-40%402x.png" />
     <BundleResource Include="Resources\Icon-Small-40%403x.png" />
+    <BundleResource Include="Resources\matchicon2.png" />
+    <BundleResource Include="Resources\associatesicon.png" />
+    <BundleResource Include="Resources\settingsicon.png" />
+    <BundleResource Include="Resources\feedicon.png" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

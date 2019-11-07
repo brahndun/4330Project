@@ -73,3 +73,7 @@
 /Users/Sarah/Projects/ImPACt/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.IOS.pdb
 /Users/Sarah/Projects/ImPACt/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.dll
 /Users/Sarah/Projects/ImPACt/iOS/bin/iPhoneSimulator/Debug/Rg.Plugins.Popup.pdb
+/Users/Sarah/Projects/ImPACt/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-13.1/optimized/matchicon2.png
+/Users/Sarah/Projects/ImPACt/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-13.1/optimized/associatesicon.png
+/Users/Sarah/Projects/ImPACt/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-13.1/optimized/feedicon.png
+/Users/Sarah/Projects/ImPACt/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone10.5-13.1/optimized/settingsicon.png

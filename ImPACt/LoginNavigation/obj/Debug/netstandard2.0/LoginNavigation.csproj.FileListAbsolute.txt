@@ -13,3 +13,7 @@
 /Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/ForgotPassword.xaml.g.cs
 /Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/NewPassword.xaml.g.cs
 /Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/VerificationCode.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/AssosciatesPage.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/FeedPage.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/MatchesPage.xaml.g.cs
+/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/SettingsPage.xaml.g.cs

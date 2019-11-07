@@ -1,7 +1,7 @@
 ﻿using System;
 namespace LoginNavigation
 {
-    public class VerificationCode
+    public class VerifyCode
     {
         //Global variable that keeps track of a verification code if the user requests one
         public static string code;

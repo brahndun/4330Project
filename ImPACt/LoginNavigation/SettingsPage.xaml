@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.SettingsPage">
+    <ContentPage.Content>
+        <TableView Intent="Menu">
+            <TableRoot>
+                <TableSection Title="General">
+                    <TextCell Text="Edit profile"/>
+                    <TextCell Text="Log out" TextColor="Red" Tapped="LogOut"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+    </ContentPage.Content>
+</ContentPage>
