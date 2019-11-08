@@ -6,11 +6,16 @@
 	<ContentPage.Content>
 		<StackLayout VerticalOptions="Center" Margin="64, 64, 64, 64">
 			<Label Text="Email" />
-			<Entry x:Name="emailEntry" Placeholder="Email" />
+            <Entry Placeholder="Email" 
+                   Text="{Binding Email}"/>
 			<Label Text="Password" />
-			<Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password"/>
+            <Entry Placeholder="Password" 
+                   Text="{Binding Password}"
+                   IsPassword="true"/>
 			<Label Text="Repeat Password" />
-			<Entry x:Name="passwordRepeatEntry" IsPassword="true" Placeholder="Repeat password"/>
+            <Entry Placeholder="Repeat password"
+                   x:Name="PasswordReentry" 
+                   IsPassword="true"/>
 			<Button Text="Sign Up" Clicked="OnSignUpButtonClicked" />
 			<Label x:Name="messageLabel" />
 		</StackLayout>

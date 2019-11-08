@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Xamarin.Forms;
+using LoginNavigation.Models;
 
 namespace LoginNavigation
 {
@@ -13,7 +14,10 @@ namespace LoginNavigation
 
         async void OnSignUpButtonClicked(object sender, EventArgs e)
         {
-            User user = new User()
+            var user = (User)BindingContext;
+            await App.Database.SaveNoteAsync(user);
+            await Navigation.PopAsync();
+            /*User user = new User()
             {
                 Password = passwordEntry.Text,
                 Email = emailEntry.Text
@@ -22,21 +26,21 @@ namespace LoginNavigation
             // Sign up logic goes here
 
             if (AreDetailsValid(user))
-            {
+            {*/
                 var rootPage = Navigation.NavigationStack.FirstOrDefault();
                 if (rootPage != null)
                 {
                     //This should be uploaded to database
-                    RegisteredUsers.registeredUsers.Add(user);
+                    //RegisteredUsers.registeredUsers.Add(user);
                     
                     App.IsUserLoggedIn = true;
                     Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
                     await Navigation.PopToRootAsync();
                 }
-            }
+            //}
         }
 
-        bool AreDetailsValid(User user)
+        /*bool AreDetailsValid(User user)
         {
             bool valid = false;
             //Error when the user didn't enter an email address
@@ -60,6 +64,6 @@ namespace LoginNavigation
             else
                 valid = true;
             return valid;
-        }
+        }*/
     }
 }
