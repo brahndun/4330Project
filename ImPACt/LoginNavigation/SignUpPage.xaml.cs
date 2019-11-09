@@ -21,12 +21,12 @@ namespace LoginNavigation
             {
                 Password = passwordEntry.Text,
                 Email = emailEntry.Text
-            };
+            };*/
 
             // Sign up logic goes here
 
             if (AreDetailsValid(user))
-            {*/
+            {
                 var rootPage = Navigation.NavigationStack.FirstOrDefault();
                 if (rootPage != null)
                 {
@@ -37,10 +37,10 @@ namespace LoginNavigation
                     Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
                     await Navigation.PopToRootAsync();
                 }
-            //}
+            }
         }
 
-        /*bool AreDetailsValid(User user)
+        bool AreDetailsValid(User user)
         {
             bool valid = false;
             //Error when the user didn't enter an email address
@@ -64,6 +64,6 @@ namespace LoginNavigation
             else
                 valid = true;
             return valid;
-        }*/
+        }
     }
 }

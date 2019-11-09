@@ -7,14 +7,16 @@
 		<StackLayout VerticalOptions="Center" Margin="64, 64, 64, 64">
 			<Label Text="Email" />
             <Entry Placeholder="Email" 
+                   x:Name="emailEntry"
                    Text="{Binding Email}"/>
 			<Label Text="Password" />
-            <Entry Placeholder="Password" 
+            <Entry Placeholder="Password"
+                   x:Name="passwordEntry"
                    Text="{Binding Password}"
                    IsPassword="true"/>
 			<Label Text="Repeat Password" />
             <Entry Placeholder="Repeat password"
-                   x:Name="PasswordReentry" 
+                   x:Name="passwordRepeatEntry" 
                    IsPassword="true"/>
 			<Button Text="Sign Up" Clicked="OnSignUpButtonClicked" />
 			<Label x:Name="messageLabel" />
