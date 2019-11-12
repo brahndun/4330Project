@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.Net.Mail;
+using LoginNavigation.Models;
 
 namespace LoginNavigation
 {

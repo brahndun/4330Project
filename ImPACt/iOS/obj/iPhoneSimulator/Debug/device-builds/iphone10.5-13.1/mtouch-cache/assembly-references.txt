@@ -1,4 +1,4 @@
-/Users/Sarah/Projects/ImPACt/iOS/bin/iPhoneSimulator/Debug/LoginNavigationiOS.exe
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/LoginNavigationiOS.exe
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/mscorlib.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/../../64bits/Xamarin.iOS.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/System.dll
@@ -32,5 +32,11 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/Facades/System.Linq.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/Facades/System.Runtime.Extensions.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
-/Users/Sarah/Projects/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
 /Users/Sarah/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
+/Users/Sarah/.nuget/packages/sqlite-net-pcl/1.6.292/lib/netstandard1.1/SQLite-net.dll
+/Users/Sarah/.nuget/packages/sqlitepclraw.core/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.core.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/Facades/System.Linq.Expressions.dll
+/Users/Sarah/.nuget/packages/sqlitepclraw.bundle_green/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll
+/Users/Sarah/.nuget/packages/sqlitepclraw.provider.sqlite3.ios_unified/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll
+/Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/Facades/System.Globalization.dll

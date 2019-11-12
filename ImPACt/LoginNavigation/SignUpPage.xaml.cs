@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Xamarin.Forms;
 using LoginNavigation.Models;
@@ -14,9 +16,9 @@ namespace LoginNavigation
 
         async void OnSignUpButtonClicked(object sender, EventArgs e)
         {
-            var user = (User)BindingContext;
-            await App.Database.SaveNoteAsync(user);
-            await Navigation.PopAsync();
+            var user = new User();
+            user.Email = emailEntry.Text;
+            user.Password = passwordEntry.Text;
             /*User user = new User()
             {
                 Password = passwordEntry.Text,
@@ -32,7 +34,7 @@ namespace LoginNavigation
                 {
                     //This should be uploaded to database
                     //RegisteredUsers.registeredUsers.Add(user);
-                    
+                    await App.Database.SaveNoteAsync(user);
                     App.IsUserLoggedIn = true;
                     Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
                     await Navigation.PopToRootAsync();

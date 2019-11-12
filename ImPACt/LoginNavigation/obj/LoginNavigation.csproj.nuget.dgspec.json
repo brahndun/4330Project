@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Sarah/Projects/ImPACt/LoginNavigation/LoginNavigation.csproj": {}
+    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {}
   },
   "projects": {
-    "/Users/Sarah/Projects/ImPACt/LoginNavigation/LoginNavigation.csproj": {
+    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sarah/Projects/ImPACt/LoginNavigation/LoginNavigation.csproj",
+        "projectUniqueName": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
         "projectName": "LoginNavigation",
-        "projectPath": "/Users/Sarah/Projects/ImPACt/LoginNavigation/LoginNavigation.csproj",
+        "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
         "packagesPath": "/Users/Sarah/.nuget/packages/",
-        "outputPath": "/Users/Sarah/Projects/ImPACt/LoginNavigation/obj/",
+        "outputPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -52,6 +52,10 @@
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.1.0.555618, )"
+            },
+            "sqlite-net-pcl": {
+              "target": "Package",
+              "version": "[1.6.292, )"
             }
           },
           "imports": [

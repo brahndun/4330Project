@@ -11,6 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.1.0.555618" />
     <PackageReference Include="Rg.Plugins.Popup" Version="1.2.0.223" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.6.292" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,5 +30,6 @@
     <Compile Remove="SignUpPageCS.cs" />
     <Compile Remove="MainPageCS.cs" />
     <Compile Remove="LoginPageCS.cs" />
+    <Compile Remove="User.cs" />
   </ItemGroup>
 </Project>
