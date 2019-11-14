@@ -94,6 +94,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "DLToolkit.Forms.Controls.TagEntryView": {
+              "target": "Package",
+              "version": "[1.0.5, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -104,9 +108,17 @@
               "target": "Package",
               "version": "[1.2.0.223, )"
             },
+            "TagIt": {
+              "target": "Package",
+              "version": "[2.0.110.4, )"
+            },
             "Xamarin.Forms": {
               "target": "Package",
               "version": "[4.1.0.555618, )"
+            },
+            "jQuery.UI.Combined": {
+              "target": "Package",
+              "version": "[1.12.1, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",

@@ -18,5 +18,9 @@ namespace LoginNavigation
             await Navigation.PopAsync();
             await Navigation.PushAsync(new LoginPage());
         }
+        async void EditProfileClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MakeProfilePage());
+        }
     }
 }

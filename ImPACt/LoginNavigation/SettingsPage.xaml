@@ -4,7 +4,7 @@
         <TableView Intent="Menu">
             <TableRoot>
                 <TableSection Title="General">
-                    <TextCell Text="Edit profile"/>
+                    <TextCell Text="Edit profile" Tapped="EditProfileClicked"/>
                     <TextCell Text="Log out" TextColor="Red" Tapped="LogOut"/>
                 </TableSection>
             </TableRoot>

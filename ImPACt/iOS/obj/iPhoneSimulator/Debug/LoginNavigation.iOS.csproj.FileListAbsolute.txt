@@ -161,3 +161,4 @@
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/obj/iPhoneSimulator/Debug/LoginNavigation.iOS.csproj.CopyComplete
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/obj/iPhoneSimulator/Debug/LoginNavigationiOS.exe
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/obj/iPhoneSimulator/Debug/LoginNavigationiOS.pdb
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/DLToolkit.Forms.Controls.TagEntryView.dll

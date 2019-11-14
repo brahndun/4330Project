@@ -161,6 +161,7 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
+-r=/Users/Sarah/.nuget/packages/dltoolkit.forms.controls.tagentryview/1.0.5/lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.TagEntryView.dll
 -r=/Users/Sarah/.nuget/packages/rg.plugins.popup/1.2.0.223/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll
 -r=/Users/Sarah/.nuget/packages/rg.plugins.popup/1.2.0.223/lib/Xamarin.IOS/Rg.Plugins.Popup.dll
 -r=/Users/Sarah/.nuget/packages/sqlite-net-pcl/1.6.292/lib/netstandard1.1/SQLite-net.dll

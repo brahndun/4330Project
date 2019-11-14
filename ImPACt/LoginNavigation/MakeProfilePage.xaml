@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.MakeProfilePage" >
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="48,48,48,48">
+                <Label Text="First name"/>
+                <Entry x:Name="firstNameEntry"/>
+                <Label Text="Last name"/>
+                <Entry x:Name="lastNameEntry"/>
+                <Label Text="State"/>
+                <Entry x:Name="stateEntry"/>
+                <Label Text="City"/>
+                <Entry x:Name="cityEntry"/>
+                <Label Text="University you're currently affiliated with"/>
+                <Entry x:Name="universityEntry"/>
+                <Label Text="Phone Number"/>
+                <Entry x:Name="phoneEntry"/>
+                <Label Text="Age"/>
+                <Entry x:Name="ageEntry"/>
+                <Label Text="Gender"/>
+                <Picker Title="Select" x:Name="genderEntry">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Male</x:String>
+                            <x:String>Female</x:String>
+                            <x:String>Other</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+                <Label Text="Are you a seeking to be a mentor or to be a mentee?"/>
+                 <Picker Title="Select" x:Name="roleEntry">
+                    <Picker.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>Mentor</x:String>
+                            <x:String>Mentee</x:String>
+                        </x:Array>
+                    </Picker.ItemsSource>
+                </Picker>
+
+                <Button Text="Next" HorizontalOptions="End" Clicked="OnNextButtonClicked"/>
+
+
+            </StackLayout>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

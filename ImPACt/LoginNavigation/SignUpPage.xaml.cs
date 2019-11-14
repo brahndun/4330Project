@@ -36,7 +36,8 @@ namespace LoginNavigation
                     //RegisteredUsers.registeredUsers.Add(user);
                     await App.Database.SaveNoteAsync(user);
                     App.IsUserLoggedIn = true;
-                    Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
+                    App.UserLoggedIn = user;
+                    Navigation.InsertPageBefore(new MakeProfilePage(), Navigation.NavigationStack.First());
                     await Navigation.PopToRootAsync();
                 }
             }

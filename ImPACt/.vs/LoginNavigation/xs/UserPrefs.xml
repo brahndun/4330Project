@@ -1,47 +1,49 @@
 ﻿<Properties StartupConfiguration="{F0AA2B49-1A31-4495-AACE-0DD5AAA80139}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoginNavigation/SignUpPage.xaml.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginNavigation/LoginPage.xaml.cs">
     <Files>
-      <File FileName="LoginNavigation/NewPassword.xaml" Line="13" Column="1" />
-      <File FileName="LoginNavigation/NewPassword.xaml.cs" Line="24" Column="24" />
-      <File FileName="iOS/Main.cs" Line="17" Column="1" />
-      <File FileName="LoginNavigation/App.cs" />
-      <File FileName="LoginNavigation/MainPage.xaml" Line="6" Column="78" />
-      <File FileName="LoginNavigation/MatchesPage.xaml" Line="4" Column="57" />
-      <File FileName="LoginNavigation/MatchesPage.xaml.cs" Line="28" Column="15" />
-      <File FileName="LoginNavigation/AssosciatesPage.xaml" Line="1" Column="1" />
-      <File FileName="LoginNavigation/AssosciatesPage.xaml.cs" />
-      <File FileName="LoginNavigation/FeedPage.xaml" />
-      <File FileName="LoginNavigation/FeedPage.xaml.cs" />
-      <File FileName="LoginNavigation/MainPage.xaml.cs" Line="10" Column="35" />
-      <File FileName="LoginNavigation/SettingsPage.xaml" />
-      <File FileName="LoginNavigation/SettingsPage.xaml.cs" Line="3" Column="19" />
-      <File FileName="LoginNavigation/SignUpPage.xaml" Line="1" Column="1" />
-      <File FileName="LoginNavigation/SignUpPage.xaml.cs" Line="35" Column="23" />
-      <File FileName="LoginNavigation/LoginPage.xaml.cs" Line="4" Column="30" />
-      <File FileName="LoginNavigation/Data/UserDatabase.cs" Line="32" Column="1" />
-      <File FileName="LoginNavigation/ForgotPassword.xaml.cs" Line="1" Column="1" />
-      <File FileName="LoginNavigation/RegisteredUsers.cs" Line="2" Column="30" />
+      <File FileName="LoginNavigation/VerificationCode.xaml.cs" Line="22" Column="14" />
+      <File FileName="LoginNavigation/MakeProfilePage.xaml" Line="24" Column="38" />
+      <File FileName="LoginNavigation/obj/Debug/netstandard2.0/MakeProfilePage.xaml.g.cs" />
+      <File FileName="iOS/AppDelegate.cs" />
+      <File FileName="LoginNavigation/EnterInterestsPage.xaml" Line="16" Column="65" />
+      <File FileName="LoginNavigation/EnterInterestsPage.xaml.cs" Line="10" Column="45" />
+      <File FileName="LoginNavigation/LoginPage.xaml" />
+      <File FileName="LoginNavigation/VerificationCode.xaml" />
+      <File FileName="LoginNavigation/MakeProfilePage.xaml.cs" Line="26" Column="72" />
+      <File FileName="LoginNavigation/UploadProfilePicPage.xaml" Line="7" Column="97" />
+      <File FileName="LoginNavigation/UploadProfilePicPage.xaml.cs" Line="18" Column="1" />
       <File FileName="LoginNavigation/Models/User.cs" Line="1" Column="1" />
-      <File FileName="LoginNavigation/VerificationCode.xaml.cs" Line="1" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="iOS/Main.cs" Line="17" Column="1" />
+      <File FileName="LoginNavigation/Data/UserDatabase.cs" Line="15" Column="1" />
+      <File FileName="LoginNavigation/IPhotoPickerService.cs" Line="7" Column="1" />
+      <File FileName="LoginNavigation/NewPassword.xaml.cs" Line="17" Column="9" />
+      <File FileName="LoginNavigation/LoginPage.xaml.cs" Line="32" Column="17" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="LoginNavigation" expanded="True">
             <Node name="LoginNavigation" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="AssosciatesPage.xaml" expanded="True" />
+              <Node name="EnterInterestsPage.xaml" expanded="True" />
               <Node name="FeedPage.xaml" expanded="True" />
               <Node name="ForgotPassword.xaml" expanded="True" />
-              <Node name="LoginPage.xaml" expanded="True" />
+              <Node name="LoginPage.xaml" expanded="True">
+                <Node name="LoginPage.xaml.cs" selected="True" />
+              </Node>
               <Node name="MainPage.xaml" expanded="True" />
+              <Node name="MakeProfilePage.xaml" expanded="True" />
               <Node name="MatchesPage.xaml" expanded="True" />
               <Node name="NewPassword.xaml" expanded="True" />
               <Node name="SettingsPage.xaml" expanded="True" />
-              <Node name="SignUpPage.xaml" expanded="True">
-                <Node name="SignUpPage.xaml.cs" selected="True" />
-              </Node>
+              <Node name="SignUpPage.xaml" expanded="True" />
+              <Node name="UploadProfilePicPage.xaml" expanded="True" />
               <Node name="VerificationCode.xaml" expanded="True" />
             </Node>
             <Node name="LoginNavigation.iOS" expanded="True">

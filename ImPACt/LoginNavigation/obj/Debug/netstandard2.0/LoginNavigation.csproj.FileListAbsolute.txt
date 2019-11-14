@@ -36,3 +36,6 @@
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.pdb
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/MakeProfilePage.xaml.g.cs
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/EnterInterestsPage.xaml.g.cs
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/UploadProfilePicPage.xaml.g.cs

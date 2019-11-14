@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.EnterInterestsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="48,48,48,48"  Orientation="Horizontal">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" >
+                <Label Text="Enter your interests: "/>
+                <Entry Placeholder = "Ex: software engineering" x:Name="interestEntry" Completed="EnterPressed"></Entry>
+                <Label Text="Press enter to add the entry to your list of interests."/>
+                <Label Text="Your interests will help match you with your most compatile mentors or mentees."/>
+
+                <StackLayout x:Name="allInterests">
+                </StackLayout>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End" Orientation="Vertical">
+                <Button Text="Next" Clicked="OnNextButtonClicked" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+                
+        </StackLayout>
+	</ContentPage.Content>
+</ContentPage>

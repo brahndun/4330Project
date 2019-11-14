@@ -15,4 +15,8 @@
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)xamarin.forms/4.1.0.555618/build/Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms/4.1.0.555618/build/Xamarin.Forms.props')" />
   </ImportGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">/Users/Sarah/.nuget/packages/jquery/1.12.4</PkgjQuery>
+    <PkgjQuery_UI_Combined Condition=" '$(PkgjQuery_UI_Combined)' == '' ">/Users/Sarah/.nuget/packages/jquery.ui.combined/1.12.1</PkgjQuery_UI_Combined>
+  </PropertyGroup>
 </Project>

@@ -2,12 +2,14 @@
 using System.IO;
 using Xamarin.Forms;
 using LoginNavigation.Data;
+using LoginNavigation.Models;
 
 namespace LoginNavigation
 {
     public class App : Application
     {
         public static bool IsUserLoggedIn { get; set; }
+        public static User UserLoggedIn { get; set; }
         static NoteDatabase database;
 
         public static NoteDatabase Database
