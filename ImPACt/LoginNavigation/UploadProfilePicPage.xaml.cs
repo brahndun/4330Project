@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using Xamarin.Forms;
 
@@ -15,8 +16,8 @@ namespace LoginNavigation
 
         public async void OnConfirmButtonClicked(object sender, EventArgs e)
         {
-            Navigation.InsertPageBefore(new MainPage(), this);
-            await Navigation.PopAsync();
+            Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
+            await Navigation.PopToRootAsync();
         }
     }
 }
