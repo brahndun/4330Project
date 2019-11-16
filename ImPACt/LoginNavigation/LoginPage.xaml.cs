@@ -44,9 +44,10 @@ namespace LoginNavigation
             await Navigation.PushAsync(new ForgotPassword());
         }
 
+        //Untested
         bool AreCredentialsCorrect(User user)
         {
-            return (RegisteredUsers.registeredUsers.FindIndex(a => a.Password == passwordEntry.Text && a.Email.ToLower() == emailEntry.Text.ToLower()) != -1);
+            return (App.Database.GetUser(emailEntry, passwordEntry) == user);
         }
     }
 }

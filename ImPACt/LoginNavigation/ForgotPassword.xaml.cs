@@ -16,7 +16,8 @@ namespace LoginNavigation
         async void SendEmail(object sender, EventArgs e)
         {
             //Ensures that the email provided exists for a user within the system
-            if (RegisteredUsers.registeredUsers.FindIndex(a => a.Email.ToLower() == emailEntry.Text.ToLower()) != -1)
+            //Untested
+            if (App.Database.GetUser(emailEntry) == emailEntry)
             {
                 try
                 {

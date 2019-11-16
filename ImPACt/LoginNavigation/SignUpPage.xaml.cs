@@ -34,7 +34,7 @@ namespace LoginNavigation
                 {
                     //This should be uploaded to database
                     //RegisteredUsers.registeredUsers.Add(user);
-                    await App.Database.SaveNoteAsync(user);
+                    await App.Database.SaveUserAsync(user);
                     App.IsUserLoggedIn = true;
                     App.UserLoggedIn = user;
                     Navigation.InsertPageBefore(new MakeProfilePage(), Navigation.NavigationStack.First());
