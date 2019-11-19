@@ -1,6 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:LoginNavigation;assembly=LoginNavigation" x:Class="LoginNavigation.MainPage">
-    <local:MatchesPage IconImageSource="matchicon2.png" Title="Matches"/>
+    
+    <NavigationPage BarBackgroundColor="Lavender" IconImageSource="matchicon2.png" Title="Matches">
+        <x:Arguments>
+            <local:MatchesPage/>
+        </x:Arguments>
+    </NavigationPage>
     <local:AssosciatesPage IconImageSource="associatesicon.png" Title="Associates" />
     <local:FeedPage IconImageSource="feedicon.png" Title="Feed"/>
     <local:SettingsPage IconImageSource="settingsicon.png" Title="Settings"/>

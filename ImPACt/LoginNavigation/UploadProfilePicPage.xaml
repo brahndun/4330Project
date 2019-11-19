@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.UploadProfilePicPage">
     <ContentPage.Content>
-        <StackLayout Orientation="Horizontal" Margin="48,48,48,48">
+        <Grid Margin="48,48,48,48">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*" />
+                <RowDefinition Height="0.7*" />
+                <RowDefinition Height="0.2*" />
+            </Grid.RowDefinitions>
             <Label Text="Upload a picture of yourself for your profile" VerticalOptions="Start"/>
-            <StackLayout VerticalOptions="CenterAndExpand">
-                <Image Source="https://images.app.goo.gl/2NiQnSseAaC9Yvwh9" x:Name="profilePic" Aspect="AspectFill"/>
-            </StackLayout>
-            <Button Text="Confirm" VerticalOptions="End" Clicked="OnConfirmButtonClicked"/>
-        </StackLayout>
+            <Image Source="https://images.app.goo.gl/2NiQnSseAaC9Yvwh9" Grid.Row="1" x:Name="profilePic" Aspect="AspectFit"/>
+            <Button Text="Upload picture" x:Name="pickPicture" Grid.Row="2"/>
+            <Button Text="Confirm" VerticalOptions="End" Grid.Row="2" Clicked="OnConfirmButtonClicked"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

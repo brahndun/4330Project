@@ -3,6 +3,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Margin="48,48,48,48">
+                <Label x:Name="messageLabel" TextColor="Red"/>
                 <Label Text="First name"/>
                 <Entry x:Name="firstNameEntry"/>
                 <Label Text="Last name"/>
@@ -13,10 +14,10 @@
                 <Entry x:Name="cityEntry"/>
                 <Label Text="University you're currently affiliated with"/>
                 <Entry x:Name="universityEntry"/>
-                <Label Text="Phone Number"/>
+                <Label Text="Phone number"/>
                 <Entry x:Name="phoneEntry"/>
-                <Label Text="Age"/>
-                <Entry x:Name="ageEntry"/>
+                <Label Text="Birth date"/>
+                <Entry x:Name="birthEntry" Placeholder="MM/DD/YYYY"/>
                 <Label Text="Gender"/>
                 <Picker Title="Select" x:Name="genderEntry">
                     <Picker.ItemsSource>

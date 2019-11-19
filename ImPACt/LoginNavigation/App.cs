@@ -10,15 +10,15 @@ namespace LoginNavigation
     {
         public static bool IsUserLoggedIn { get; set; }
         public static User UserLoggedIn { get; set; }
-        static NoteDatabase database;
+        static UserDatabase database;
 
-        public static NoteDatabase Database
+        public static UserDatabase Database
         {
             get
             {
                 if (database == null)
                 {
-                    database = new NoteDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Notes.db3"));
+                    database = new UserDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Users3.db3"));
                 }
                 return database;
             }
@@ -28,7 +28,9 @@ namespace LoginNavigation
         {
             if (!IsUserLoggedIn)
             {
-                MainPage = new NavigationPage(new LoginPage());
+                var navPage = new NavigationPage(new LoginPage());
+                navPage.BarBackgroundColor = Color.FromRgb(153, 255, 204);
+                MainPage = navPage;
             }
             else
             {

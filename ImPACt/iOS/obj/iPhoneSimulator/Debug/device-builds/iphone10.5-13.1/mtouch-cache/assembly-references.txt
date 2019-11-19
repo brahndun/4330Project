@@ -34,6 +34,8 @@
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/Facades/System.Reflection.Extensions.dll
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
 /Users/Sarah/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll
+/Users/Sarah/.nuget/packages/xam.plugin.media/4.0.1.5/lib/xamarinios10/Plugin.Media.dll
+/Users/Sarah/.nuget/packages/plugin.permissions/3.0.0.12/lib/xamarinios10/Plugin.Permissions.dll
 /Users/Sarah/.nuget/packages/sqlite-net-pcl/1.6.292/lib/netstandard1.1/SQLite-net.dll
 /Users/Sarah/.nuget/packages/sqlitepclraw.core/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.core.dll
 /Library/Frameworks/Xamarin.iOS.framework/Versions/13.4.0.2/lib/mono/Xamarin.iOS/Facades/System.Linq.Expressions.dll

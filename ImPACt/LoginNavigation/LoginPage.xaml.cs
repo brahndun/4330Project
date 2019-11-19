@@ -29,6 +29,7 @@ namespace LoginNavigation
             if (isValid)
             {
                 App.IsUserLoggedIn = true;
+                App.UserLoggedIn = await App.Database.GetUserAsync(user.Email, user.Password);
                 Navigation.InsertPageBefore(new MainPage(), this);
                 await Navigation.PopAsync();
             }
@@ -47,7 +48,8 @@ namespace LoginNavigation
         //Untested
         bool AreCredentialsCorrect(User user)
         {
-            return (App.Database.GetUser(emailEntry, passwordEntry) == user);
+            var u = App.Database.GetUserAsync(emailEntry.Text, passwordEntry.Text).Result;
+            return u != null;
         }
     }
 }

@@ -1,32 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj": {}
+    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj": {
+    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj",
+        "projectUniqueName": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
         "projectName": "LoginNavigation",
-        "projectPath": "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj",
-        "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\obj\\",
+        "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
+        "packagesPath": "/Users/Sarah/.nuget/packages/",
+        "outputPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "/Users/Sarah/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -57,9 +53,17 @@
               "target": "Package",
               "version": "[1.2.0.223, )"
             },
+            "SQLiteNetExtensions": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
             "TagIt": {
               "target": "Package",
               "version": "[2.0.110.4, )"
+            },
+            "Xam.Plugin.Media": {
+              "target": "Package",
+              "version": "[4.0.1.5, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
@@ -84,7 +88,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
         }
       }
     }

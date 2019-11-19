@@ -162,3 +162,8 @@
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/obj/iPhoneSimulator/Debug/LoginNavigationiOS.exe
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/obj/iPhoneSimulator/Debug/LoginNavigationiOS.pdb
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/DLToolkit.Forms.Controls.TagEntryView.dll
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/Plugin.Permissions.dll
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/Plugin.Media.dll
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/Newtonsoft.Json.dll
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/SQLiteNetExtensions.dll
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/SQLiteNetExtensions.pdb

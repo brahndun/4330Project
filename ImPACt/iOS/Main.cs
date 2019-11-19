@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 
 using Foundation;
 using UIKit;

@@ -34,9 +34,9 @@ namespace LoginNavigation
 
         public async void OnNextButtonClicked(object sender, EventArgs e)
         {
-            App.UserLoggedIn.Interests = interests;
-            await App.Database.SaveNoteAsync(App.UserLoggedIn);
-            await Navigation.PushAsync(new UploadProfilePicPage());
+            App.UserLoggedIn.Interests = String.Join("^", interests.ToArray());
+            await App.Database.SaveUserAsync(App.UserLoggedIn);
+            await Navigation.PushAsync(new WriteDescriptionPage());
         }
     }
 }

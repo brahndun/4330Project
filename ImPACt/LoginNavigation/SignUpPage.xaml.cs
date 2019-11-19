@@ -27,7 +27,8 @@ namespace LoginNavigation
 
             // Sign up logic goes here
 
-            if (AreDetailsValid(user))
+            var allUsers = await App.Database.GetUsersAsync();
+            if (AreDetailsValid(user, allUsers))
             {
                 var rootPage = Navigation.NavigationStack.FirstOrDefault();
                 if (rootPage != null)
@@ -43,14 +44,14 @@ namespace LoginNavigation
             }
         }
 
-        bool AreDetailsValid(User user)
+        bool AreDetailsValid(User user, List<User> allUsers)
         {
             bool valid = false;
             //Error when the user didn't enter an email address
             if (user.Email.Length <= 0)
                 messageLabel.Text = "Please enter an email address";
             //Error when user's email already exists within the database
-            else if (RegisteredUsers.registeredUsers.FindIndex(a => a.Email.ToLower() == user.Email.ToLower()) != -1)
+            else if (allUsers.Find(x => x.Email.ToLower() == user.Email.ToLower()) != null)
                 messageLabel.Text = "Email is already in use";
             //Error when user's email is not a .edu email
             else if (user.Email.Substring(Math.Max(0, user.Email.Length - 4)) != ".edu")

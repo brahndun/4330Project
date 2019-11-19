@@ -19,7 +19,7 @@ namespace LoginNavigation
             if (IsValid())
             {
                 //Changes the user's password in the database
-                User user = RegisteredUsers.registeredUsers.Find(a => a.Email.ToLower() == VerifyCode.sentTo.ToLower());
+                var user = await App.Database.GetUserAsync(VerifyCode.sentTo);
                 if (user != null) {
                     user.Password = passwordEntry.Text;
                     App.IsUserLoggedIn = true;

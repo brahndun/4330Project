@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Net.Mail;
 using System.Linq;
+using LoginNavigation.Models;
 
 using Xamarin.Forms;
 
@@ -17,7 +18,8 @@ namespace LoginNavigation
         {
             //Ensures that the email provided exists for a user within the system
             //Untested
-            if (App.Database.GetUser(emailEntry) == emailEntry)
+            var u = App.Database.GetUserAsync(emailEntry.Text);
+            if (u.Result.Email == emailEntry.Text)
             {
                 try
                 {

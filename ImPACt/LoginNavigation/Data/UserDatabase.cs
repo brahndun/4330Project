@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using SQLite;
 using LoginNavigation.Models;
+using Plugin.Media;
+using Plugin.Media.Abstractions;
 
 namespace LoginNavigation.Data
 {
@@ -25,6 +27,13 @@ namespace LoginNavigation.Data
         {
             return _database.Table<User>()
                             .Where(i => i.ID == id)
+                            .FirstOrDefaultAsync();
+        }
+
+        public Task<User> GetUserAsync(string email)
+        {
+            return _database.Table<User>()
+                            .Where(i => i.Email == email)
                             .FirstOrDefaultAsync();
         }
 
