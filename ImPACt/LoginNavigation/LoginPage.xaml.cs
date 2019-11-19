@@ -14,6 +14,14 @@ namespace LoginNavigation
 
         async void OnSignUpButtonClicked(object sender, EventArgs e)
         {
+            //THIS IS DEBING CODE, REMOVE LATER
+            var us = await App.Database.GetUsersAsync();
+            for (int i = 0; i < us.Count; i++)
+                us[i].MatchRequestsSent = String.Empty;
+            for (int i = 0; i < us.Count; i++)
+                await App.Database.SaveUserAsync(us[i]);
+            //END OF DEBUGGING
+
             await Navigation.PushAsync(new SignUpPage());
         }
 

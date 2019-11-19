@@ -19,6 +19,8 @@ namespace LoginNavigation
                 if (database == null)
                 {
                     database = new UserDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Users3.db3"));
+
+                    
                 }
                 return database;
             }

@@ -7,6 +7,10 @@
                     <TextCell Text="Edit profile" Tapped="EditProfileClicked"/>
                     <TextCell Text="Log out" TextColor="Red" Tapped="LogOut"/>
                 </TableSection>
+                <TableSection Title="Debug">
+                    <TextCell Text="Erase match requests" Tapped="EraseMatchRequestsTapped"/>
+                    <TextCell Text="Switch to Jackson Lambert" Tapped="SwitchToJacksonLambert" />
+                </TableSection>
             </TableRoot>
         </TableView>
     </ContentPage.Content>

@@ -25,7 +25,7 @@
                 <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Row = "2" x:Name = "matchDescription" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."/>
                 <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Row = "3" x:Name="matchInterests"/>
             </Grid>
-            <Grid Grid.Row="1">
+            <Grid Grid.Row="1" x:Name="bottomGrid">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
@@ -36,7 +36,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Button x:Name="backButton" VerticalOptions="Center" HorizontalOptions="Center" Text="Back" Clicked="OnBackButtonClicked"/>
-                <Button VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="Request to connect"/>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="Request to connect" x:Name="requestButton" Clicked="OnRequestButtonClicked"/>
                 <Button x:Name="nextButton" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" Text="Next" Clicked="OnNextButtonClicked"/>
             </Grid>
         </Grid>

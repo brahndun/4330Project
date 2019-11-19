@@ -26,8 +26,12 @@ namespace LoginNavigation.Models
         public string Description { get; set; }
         //A list of the user's interests, separated by the delimiter ^
         public string Interests { get; set; }
+        //A list of IDs that correspond to users that this user has sent match requests to
+        public string MatchRequestsSent { get; set; }
 
         //The user's profile pic, saved as an array of bytes.
         public byte[] ProfilePic { get; set; } = null;
+
+        public string FullName { get { return this.FirstName + " " + this.LastName; } }
     }
 }

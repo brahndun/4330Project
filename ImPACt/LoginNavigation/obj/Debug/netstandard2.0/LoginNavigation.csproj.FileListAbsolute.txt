@@ -40,3 +40,4 @@
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/EnterInterestsPage.xaml.g.cs
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/UploadProfilePicPage.xaml.g.cs
 /Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/WriteDescriptionPage.xaml.g.cs
+/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/Debug/netstandard2.0/ActiveMatchesPage.xaml.g.cs

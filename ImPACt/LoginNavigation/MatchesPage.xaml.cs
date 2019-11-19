@@ -56,6 +56,20 @@ namespace LoginNavigation
             if (matchIndex == allUsers.Count - 1)
                 nextButton.IsVisible = false;
 
+            //Checks to see if the current match has already been sent a request by the user.
+            //If so, then disable the "Request to match" button
+            if (!String.IsNullOrEmpty(App.UserLoggedIn.MatchRequestsSent))
+            {
+                //Changes the string of IDs stored in the logged in user's MatchRequestsSent property
+                //and changes it to a list of IDs
+                List<String> matchRequestsSent = new List<String>(App.UserLoggedIn.MatchRequestsSent.Split('^'));
+
+                if (matchRequestsSent.Contains(allUsers[matchIndex].ID.ToString()))
+                    ChangeRequestButton();
+            }
+
+
+
             matchImage.Source = ImageSource.FromStream(() => new MemoryStream(allUsers[matchIndex].ProfilePic));
             matchName.Text = allUsers[matchIndex].FirstName + " " + allUsers[matchIndex].LastName;
 
@@ -87,6 +101,23 @@ namespace LoginNavigation
             {
                 await Navigation.PopAsync();
             }
+        }
+
+        async void OnRequestButtonClicked(object sender, EventArgs e)
+        {
+            ChangeRequestButton();
+            App.UserLoggedIn.MatchRequestsSent += allUsers[matchIndex].ID.ToString() + '^';
+            await App.Database.SaveUserAsync(App.UserLoggedIn);
+        }
+
+        void ChangeRequestButton()
+        {
+            bottomGrid.Children.Remove(requestButton);
+            bottomGrid.Children.Add(new Label() {
+                Text = "Request sent",
+                HorizontalOptions = LayoutOptions.Center,
+                VerticalOptions = LayoutOptions.Center
+            }, 1, 0);
         }
     }
 }
