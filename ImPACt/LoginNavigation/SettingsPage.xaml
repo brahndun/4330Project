@@ -9,6 +9,7 @@
                 </TableSection>
                 <TableSection Title="Debug">
                     <TextCell Text="Erase match requests" Tapped="EraseMatchRequestsTapped"/>
+                    <TextCell Text="Erase all associates" Tapped="EraseAssociatesTapped"/>
                     <TextCell Text="Switch to Jackson Lambert" Tapped="SwitchToJacksonLambert" />
                 </TableSection>
             </TableRoot>

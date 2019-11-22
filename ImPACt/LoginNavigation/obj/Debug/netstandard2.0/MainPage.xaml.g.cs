@@ -17,8 +17,12 @@ namespace LoginNavigation {
     public partial class MainPage : global::Xamarin.Forms.TabbedPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::LoginNavigation.MatchesPage curMatchPage;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MainPage));
+            curMatchPage = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::LoginNavigation.MatchesPage>(this, "curMatchPage");
         }
     }
 }

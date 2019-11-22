@@ -3,7 +3,7 @@
     
     <NavigationPage IconImageSource="matchicon2.png" Title="Matches">
         <x:Arguments>
-            <local:MatchesPage/>
+            <local:MatchesPage x:Name="curMatchPage"/>
         </x:Arguments>
     </NavigationPage>
 

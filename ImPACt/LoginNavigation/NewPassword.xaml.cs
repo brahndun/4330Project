@@ -22,6 +22,8 @@ namespace LoginNavigation
                 var user = await App.Database.GetUserAsync(VerifyCode.sentTo);
                 if (user != null) {
                     user.Password = passwordEntry.Text;
+                    await App.Database.SaveUserAsync(user);
+                    App.UserLoggedIn = user;
                     App.IsUserLoggedIn = true;
                     Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
                     await Navigation.PopToRootAsync();

@@ -12,6 +12,9 @@ namespace LoginNavigation
         public static User UserLoggedIn { get; set; }
         static UserDatabase database;
 
+        //A reference to the main page, which is a tabbed page containing 4 other pages
+        public static MainPage tabbedPage { get; set; }
+
         public static UserDatabase Database
         {
             get

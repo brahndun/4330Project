@@ -11,7 +11,10 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Label Text="Actuve match requests"/> 
-            <ListView Grid.Row="1" ItemsSource="{Binding MatchRequests}" HasUnevenRows="true">
+            <ListView Grid.Row="1"
+                      ItemsSource="{Binding MatchRequests}"
+                      HasUnevenRows="true"
+                      ItemTapped="UserClicked">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -24,7 +27,7 @@
                                     <ColumnDefinition Width="0.3*"/>
                                 </Grid.ColumnDefinitions>
                                 <Label Text="{Binding FullName}" VerticalOptions="End"/>
-                                <Label Text="Message > " Grid.Column="1" HorizontalOptions="End" VerticalOptions="End"/>
+                                <Label Text="View > " Grid.Column="1" HorizontalOptions="End" VerticalOptions="End"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>

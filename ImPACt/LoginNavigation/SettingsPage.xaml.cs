@@ -14,10 +14,12 @@ namespace LoginNavigation
         }
         async void LogOut(object sender, EventArgs e)
         {
+            App.tabbedPage.currentMatchesPage.Reset();
             App.IsUserLoggedIn = false;
             App.UserLoggedIn = null;
-            await Navigation.PopAsync();
-            await Navigation.PushAsync(new LoginPage());
+            var navPage = new NavigationPage(new LoginPage());
+            navPage.BarBackgroundColor = Color.FromRgb(153, 255, 204);
+            App.Current.MainPage = navPage;
         }
         async void SwitchToJacksonLambert(object sender, EventArgs e)
         {
@@ -35,6 +37,16 @@ namespace LoginNavigation
         {
             App.UserLoggedIn.MatchRequestsSent = String.Empty;
             await App.Database.SaveUserAsync(App.UserLoggedIn);
+        }
+        async void EraseAssociatesTapped(object sender, EventArgs e)
+        {
+            var users = await App.Database.GetUsersAsync();
+            for (int i = 0; i < users.Count; i++)
+            {
+                users[i].Associates = String.Empty;
+                await App.Database.SaveUserAsync(users[i]);
+            }
+
         }
 
     }
