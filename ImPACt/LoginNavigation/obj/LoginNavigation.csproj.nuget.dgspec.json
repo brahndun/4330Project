@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {}
+    "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {}
   },
   "projects": {
-    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
+    "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
+        "projectUniqueName": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
         "projectName": "LoginNavigation",
-        "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
-        "packagesPath": "/Users/Sarah/.nuget/packages/",
-        "outputPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/",
+        "projectPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
+        "packagesPath": "/Users/brandon/.nuget/packages/",
+        "outputPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/Sarah/.config/NuGet/NuGet.Config"
+          "/Users/brandon/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"

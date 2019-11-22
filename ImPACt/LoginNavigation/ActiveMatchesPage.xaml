@@ -10,7 +10,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Actuve match requests"/> 
+            <Label Text="Active match requests"/> 
             <ListView Grid.Row="1"
                       ItemsSource="{Binding MatchRequests}"
                       HasUnevenRows="true"

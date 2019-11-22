@@ -8,17 +8,17 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LoginNavigation.MyPage.xaml", "MyPage.xaml", typeof(global::LoginNavigation.MyPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("LoginNavigation.MyPage.xaml", "MyPage.xaml", typeof(global::LoginNavigation.DirectMessagingPage))]
 
 namespace LoginNavigation {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("MyPage.xaml")]
-    public partial class MyPage : global::Xamarin.Forms.ContentPage {
+    public partial class DirectMessagingPage : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
-            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(MyPage));
+            global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DirectMessagingPage));
         }
     }
 }
