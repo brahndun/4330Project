@@ -15,9 +15,9 @@ namespace LoginNavigation
             App.tabbedPage = this;
             currentMatchesPage = curMatchPage;
             
-            this.BarBackgroundColor = Color.FromRgb(89, 189, 148);
-            this.UnselectedTabColor = Color.FromRgb(80, 80, 80);
-            this.SelectedTabColor = Color.FromRgb(19, 51, 255);
+            this.BarBackgroundColor = Color.FromRgb(60, 133, 186);
+            this.UnselectedTabColor = Color.FromRgb(40,40,40);
+            this.SelectedTabColor = Color.FromRgb(240,240,240);
         }
     }
 }

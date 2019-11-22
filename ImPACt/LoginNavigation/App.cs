@@ -34,7 +34,8 @@ namespace LoginNavigation
             if (!IsUserLoggedIn)
             {
                 var navPage = new NavigationPage(new LoginPage());
-                navPage.BarBackgroundColor = Color.FromRgb(153, 255, 204);
+                navPage.BarBackgroundColor = Color.FromRgb(79, 168, 232);
+                navPage.BarTextColor = Color.White;
                 MainPage = navPage;
             }
             else

@@ -18,7 +18,8 @@ namespace LoginNavigation
             App.IsUserLoggedIn = false;
             App.UserLoggedIn = null;
             var navPage = new NavigationPage(new LoginPage());
-            navPage.BarBackgroundColor = Color.FromRgb(153, 255, 204);
+            navPage.BarBackgroundColor = Color.FromRgb(79, 168, 232);
+            navPage.BarTextColor = Color.White;
             App.Current.MainPage = navPage;
         }
         async void SwitchToJacksonLambert(object sender, EventArgs e)
