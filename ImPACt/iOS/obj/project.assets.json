@@ -1710,20 +1710,20 @@
     ]
   },
   "packageFolders": {
-    "/Users/brandon/.nuget/packages/": {}
+    "/Users/Sarah/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/iOS/LoginNavigation.iOS.csproj",
+      "projectUniqueName": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/LoginNavigation.iOS.csproj",
       "projectName": "LoginNavigationiOS",
-      "projectPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/iOS/LoginNavigation.iOS.csproj",
-      "packagesPath": "/Users/brandon/.nuget/packages/",
-      "outputPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/iOS/obj/",
+      "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/LoginNavigation.iOS.csproj",
+      "packagesPath": "/Users/Sarah/.nuget/packages/",
+      "outputPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "/Users/brandon/.config/NuGet/NuGet.Config"
+        "/Users/Sarah/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "xamarinios10"
@@ -1734,8 +1734,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
-              "projectPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj"
+            "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
+              "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj"
             }
           }
         }

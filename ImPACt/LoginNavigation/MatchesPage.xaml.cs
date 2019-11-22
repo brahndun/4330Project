@@ -67,7 +67,7 @@ namespace LoginNavigation
                 
             if (matchIndex == 0)
                 backButton.IsVisible = false;
-            if (matchIndex == allUsers.Count - 1)
+            if (matchIndex >= allUsers.Count - 1)
                 nextButton.IsVisible = false;
 
             //Checks to see if the current match has already been sent a request by the user.
@@ -96,17 +96,28 @@ namespace LoginNavigation
 
 
 
-            matchImage.Source = ImageSource.FromStream(() => new MemoryStream(allUsers[matchIndex].ProfilePic));
-            matchName.Text = allUsers[matchIndex].FirstName + " " + allUsers[matchIndex].LastName;
+            if (allUsers.Count > 0)
+            {
+                matchImage.Source = ImageSource.FromStream(() => new MemoryStream(allUsers[matchIndex].ProfilePic));
+                matchName.Text = allUsers[matchIndex].FirstName + " " + allUsers[matchIndex].LastName;
 
-            if (!String.IsNullOrEmpty(allUsers[matchIndex].Description))
-                matchDescription.Text = allUsers[matchIndex].Description;
+                if (!String.IsNullOrEmpty(allUsers[matchIndex].Description))
+                    matchDescription.Text = allUsers[matchIndex].Description;
 
-            List<String> interests = new List<String>(allUsers[matchIndex].Interests.Split('^'));
-            for (int i = 0; i < interests.Count; i++)
-                matchInterests.Text += interests[i] + ", ";
-            if (!String.IsNullOrEmpty(matchInterests.Text))
-                matchInterests.Text = matchInterests.Text.Remove(matchInterests.Text.Length - 2);
+                List<String> interests = new List<String>(allUsers[matchIndex].Interests.Split('^'));
+                for (int i = 0; i < interests.Count; i++)
+                    matchInterests.Text += interests[i] + ", ";
+                if (!String.IsNullOrEmpty(matchInterests.Text))
+                    matchInterests.Text = matchInterests.Text.Remove(matchInterests.Text.Length - 2);
+            }
+
+            else
+            {
+                if (App.UserLoggedIn.Role == "Mentor")
+                    matchName.Text = "No valid mentees in the system";
+                else
+                    matchName.Text = "No valid mentors in the system";
+            }
 
 
         }
