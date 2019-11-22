@@ -36,7 +36,10 @@ namespace LoginNavigation
                     allUsers = allUsers.Where(x => x.Role == "Mentee").ToList();
 
                 //Remove all users the current user has already accepted to match with
-                allUsers = allUsers.Where(x => !x.Associates.Split('^').Contains(App.UserLoggedIn.ID.ToString())).ToList();
+                List<String> myAssociates = new List<String>(App.UserLoggedIn.Associates.Split('^'));
+                //Removes all null values from the associates array
+                myAssociates = myAssociates.Where(x => !String.IsNullOrEmpty(x)).ToList();
+                allUsers = allUsers.Where(x => !myAssociates.Contains(allUsers[matchIndex].ID.ToString())).ToList();
 
                 //How many interests the user has in common with a mentor.
                 int[] interestHits = new int[allUsers.Count];
