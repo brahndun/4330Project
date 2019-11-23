@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.EnterInterestsPage">
+    <ContentPage.Content>
+        <StackLayout Margin="48,48,48,48"  Orientation="Horizontal">
+            <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" >
+                <ScrollView>
+		            <StackLayout Margin="20,35,20,20">
+			            <Label Text="Interests" 
+                            FontAttributes="Bold" 
+                            HorizontalOptions="Center" />
+			            <Picker Title="Select your Subject of Interest" 
+                            TitleColor="Red"
+                            ItemsSource="{Binding Interests}" 
+                            ItemDisplayBinding="{Binding Subject}"
+                            SelectedItem="{Binding SelectedInterest}" />
+			            <Label Text="{Binding SelectedInterest.Subject}" 
+                            HorizontalOptions="Center" 
+                            Style="{DynamicResource TitleStyle}" />
+			            <Label Text="{Binding SelectedInterest.Interests[0]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[1]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[2]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[3]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[4]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[5]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[6]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[7]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[8]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Label Text="{Binding SelectedInterest.Interests[9]}"
+                            FontAttributes="Italic" HorizontalOptions="Center" />
+			            
+		            </StackLayout>
+	            </ScrollView>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End" Orientation="Vertical">
+                <Button Text="Next" Clicked="OnNextButtonClicked" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+                
+        </StackLayout>
+        
+	</ContentPage.Content>
+</ContentPage>
