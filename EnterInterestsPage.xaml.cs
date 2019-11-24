@@ -15,7 +15,7 @@ namespace LoginNavigation
             InitializeComponent();
         }
 
-        public EnterInterestsPageCS()
+        public void EnterInterestsPageCS()
 		{
 			var picker = new Picker { Title = "Select a Subject of Interest:", TitleColor = Color.Red };
 			picker.SetBinding(Picker.ItemsSourceProperty, "Interests");
@@ -23,44 +23,44 @@ namespace LoginNavigation
 			picker.ItemDisplayBinding = new Binding("Subject");
 
 			var interestsLabel0 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[0]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel0.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[0]");
+            interestsLabel0.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel1 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[1]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel1.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[1]");
+            interestsLabel1.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel2 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[2]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel2.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[2]");
+            interestsLabel2.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel3 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[3]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel3.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[3]");
+            interestsLabel3.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel4 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[4]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel4.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[4]");
+            interestsLabel4.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel5 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[5]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel5.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[5]");
+            interestsLabel5.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel6 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[6]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel6.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[6]");
+            interestsLabel6.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel7 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[7]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel7.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[7]");
+            interestsLabel7.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel8 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[8]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel8.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[8]");
+            interestsLabel8.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
             var interestsLabel9 = new Label { HorizontalOptions = LayoutOptions.Center };
-			nameLabel.SetBinding(Label.TextProperty, "SelectedInterest.Interests[9]");
-			nameLabel.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel9.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[9]");
+            interestsLabel9.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
 			Content = new ScrollView
 			{
@@ -88,7 +88,7 @@ namespace LoginNavigation
 			BindingContext = new InterestsPageViewModel();
 		}
 
-        public void EnterPressed(object sender, EventArgs e)
+        /*public void EnterPressed(object sender, EventArgs e)
         {
             //Users can only have 10 interests at maximum.
             if (allInterests.Children.Count < 10)
@@ -105,7 +105,7 @@ namespace LoginNavigation
                 //it for the easier to quickly input more interests.
                 interestEntry.Focus();
             }
-        }
+        }*/
 
         public async void OnNextButtonClicked(object sender, EventArgs e)
         {

@@ -6,7 +6,7 @@ namespace LoginNavigation
     {
         public IList<Interests> Interests { get { return InterestsData.interests; } }
 
-        Intersts selectedInterest;
+        Interests selectedInterest;
         public Interests SelectedInterest
         {
             get { return selectedInterest; }

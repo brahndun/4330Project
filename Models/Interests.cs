@@ -13,6 +13,6 @@ namespace LoginNavigation
     {
         public string Subject { get; set; }
 
-        public string[] Interests { get; set; }
+        public string[] SubjectInterests { get; set; }
     }
 }
