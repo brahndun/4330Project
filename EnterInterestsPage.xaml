@@ -9,32 +9,32 @@
                             FontAttributes="Bold" 
                             HorizontalOptions="Center" />
 			            <Picker Title="Select your Subject of Interest" 
-                            TitleColor="Red"
+                            TitleColor="Blue"
                             ItemsSource="{Binding Interests}" 
                             ItemDisplayBinding="{Binding Subject}"
                             SelectedItem="{Binding SelectedInterest}" />
 			            <Label Text="{Binding SelectedInterest.Subject}" 
                             HorizontalOptions="Center" 
                             Style="{DynamicResource TitleStyle}" />
-			            <Label Text="{Binding SelectedInterest.Interests[0]}"
+			            <Label Text="{Binding SelectedInterest.SubjectInterests[0]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[1]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[1]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[2]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[2]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[3]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[3]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[4]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[4]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[5]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[5]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[6]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[6]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[7]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[7]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[8]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[8]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
-                        <Label Text="{Binding SelectedInterest.Interests[9]}"
+                        <Label Text="{Binding SelectedInterest.SubjectInterests[9]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
 			            
 		            </StackLayout>
