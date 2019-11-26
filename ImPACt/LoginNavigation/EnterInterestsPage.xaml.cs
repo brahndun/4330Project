@@ -21,7 +21,7 @@ namespace LoginNavigation
             var picker = new Picker { Title = "Select a Subject of Interest:", TitleColor = Color.Red };
             picker.SetBinding(Picker.ItemsSourceProperty, "Interests");
             picker.SetBinding(Picker.SelectedItemProperty, "SelectedInterest");
-            picker.ItemDisplayBinding = new Binding("SelectedInterest.Subject");
+            picker.ItemDisplayBinding = new Binding("Subject");
 
             var interestsLabel0 = new Label { HorizontalOptions = LayoutOptions.Center };
             interestsLabel0.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[0]");

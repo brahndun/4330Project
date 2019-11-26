@@ -4,7 +4,7 @@ namespace LoginNavigation
 {
     public class InterestsPageViewModel : ViewModelBase
     {
-        public IList<Interests> Interests { get { return InterestsData.interests; } }
+        public IList<Interests> Interests { get { return InterestsData.Interests; } }
 
         Interests selectedInterest;
         public Interests SelectedInterest
