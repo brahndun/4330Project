@@ -13,7 +13,7 @@ namespace LoginNavigation
         public EnterInterestsPage()
         {
             InitializeComponent();
-            BindingContext = new InterestsPageViewModel();
+            this.BindingContext = new InterestsPageViewModel();
         }
 
         public void EnterInterestsPageCS()

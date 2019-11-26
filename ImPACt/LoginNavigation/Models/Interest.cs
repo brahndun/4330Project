@@ -9,7 +9,7 @@ using System.ComponentModel;
 
 namespace LoginNavigation
 {
-    public class Interests 
+    public class Interest 
     {
         public string Subject { get; set; }
 

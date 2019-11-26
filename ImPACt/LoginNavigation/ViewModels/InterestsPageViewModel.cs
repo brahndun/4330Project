@@ -4,10 +4,10 @@ namespace LoginNavigation
 {
     public class InterestsPageViewModel : ViewModelBase
     {
-        public IList<Interests> Interests { get { return InterestsData.Interests; } }
+        public IList<Interest> Interests { get { return InterestsData.Interests; } }
 
-        Interests selectedInterest;
-        public Interests SelectedInterest
+        Interest selectedInterest;
+        public Interest SelectedInterest
         {
             get { return selectedInterest; }
             set
