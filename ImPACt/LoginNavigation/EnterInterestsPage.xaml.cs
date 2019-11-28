@@ -9,7 +9,7 @@ namespace LoginNavigation
     public partial class EnterInterestsPage : ContentPage
     {
 
-        List<String> interests = new List<String>();
+        List<String> interests;
         public EnterInterestsPage()
         {
             InitializeComponent();
@@ -18,6 +18,8 @@ namespace LoginNavigation
 
         public void EnterInterestsPageCS()
         {
+            interests = new List<String>(App.UserLoggedIn.Interests.Split('^')); 
+
             var picker = new Picker { Title = "Select a Subject of Interest:", TitleColor = Color.Red };
             picker.SetBinding(Picker.ItemsSourceProperty, "Interests");
             picker.SetBinding(Picker.SelectedItemProperty, "SelectedInterest");
@@ -63,7 +65,11 @@ namespace LoginNavigation
             interestsLabel9.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[9]");
             interestsLabel9.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
-            /*CheckBox interestsCheckBox0 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            CheckBox interestsCheckBox0 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel0.Text))
+            {
+                interestsCheckBox0.IsChecked = true;
+            }
             interestsCheckBox0.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -77,6 +83,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox1 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel1.Text))
+            {
+                interestsCheckBox1.IsChecked = true;
+            }
             interestsCheckBox1.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -90,6 +100,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox2 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel2.Text))
+            {
+                interestsCheckBox2.IsChecked = true;
+            }
             interestsCheckBox2.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -103,6 +117,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox3 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel3.Text))
+            {
+                interestsCheckBox3.IsChecked = true;
+            }
             interestsCheckBox3.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -116,6 +134,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox4 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel4.Text))
+            {
+                interestsCheckBox4.IsChecked = true;
+            }
             interestsCheckBox4.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -129,6 +151,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox5 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel5.Text))
+            {
+                interestsCheckBox5.IsChecked = true;
+            }
             interestsCheckBox5.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -142,6 +168,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox6 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel6.Text))
+            {
+                interestsCheckBox6.IsChecked = true;
+            }
             interestsCheckBox6.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -155,6 +185,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox7 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel7.Text))
+            {
+                interestsCheckBox7.IsChecked = true;
+            }
             interestsCheckBox7.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -168,6 +202,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox8 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel8.Text))
+            {
+                interestsCheckBox8.IsChecked = true;
+            }
             interestsCheckBox8.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -181,6 +219,10 @@ namespace LoginNavigation
             };
 
             CheckBox interestsCheckBox9 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            if (interests.Contains(interestsLabel9.Text))
+            {
+                interestsCheckBox9.IsChecked = true;
+            }
             interestsCheckBox9.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -191,7 +233,7 @@ namespace LoginNavigation
                 {
                     interests.Remove(interestsLabel9.Text);
                 }
-            };*/
+            };
             Content = new ScrollView
             {
                 Content = new StackLayout
@@ -200,27 +242,27 @@ namespace LoginNavigation
                     Children =
                     {
                         new Label { Text = "Interests", FontAttributes = FontAttributes.Bold, HorizontalOptions = LayoutOptions.Center },
-                        picker,
+                        
                         interestsLabel0,
-                        //interestsCheckBox0,
+                        interestsCheckBox0,
                         interestsLabel1,
-                        //interestsCheckBox1,
+                        interestsCheckBox1,
                         interestsLabel2,
-                        //interestsCheckBox2,
+                        interestsCheckBox2,
                         interestsLabel3,
-                        //interestsCheckBox3,
+                        interestsCheckBox3,
                         interestsLabel4,
-                        //interestsCheckBox4,
+                        interestsCheckBox4,
                         interestsLabel5,
-                        //interestsCheckBox5,
+                        interestsCheckBox5,
                         interestsLabel6,
-                        //interestsCheckBox6,
+                        interestsCheckBox6,
                         interestsLabel7,
-                        //interestsCheckBox7,
+                        interestsCheckBox7,
                         interestsLabel8,
-                        //interestsCheckBox8,
-                        interestsLabel9//,
-                        //interestsCheckBox9
+                        interestsCheckBox8,
+                        interestsLabel9,
+                        interestsCheckBox9
 					}
                 }
             };
@@ -249,6 +291,10 @@ namespace LoginNavigation
 
         public async void OnNextButtonClicked(object sender, EventArgs e)
         {
+            /*if(interests.Count > 10)
+            {
+                //Error here to limit # of interests
+            }*/
             App.UserLoggedIn.Interests = String.Join("^", interests.ToArray());
             await App.Database.SaveUserAsync(App.UserLoggedIn);
             await Navigation.PushAsync(new WriteDescriptionPage());

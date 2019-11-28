@@ -6,7 +6,7 @@ namespace LoginNavigation
     public static class InterestsData
     {
         public static IList<Interest> Interests { get; private set; }
-
+        //Constructor for hardcoding the data... ideally loaded from a database instead.
         static InterestsData()
         {
             Interests = new List<Interest>();
