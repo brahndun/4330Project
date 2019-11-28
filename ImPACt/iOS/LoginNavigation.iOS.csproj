@@ -103,6 +103,7 @@
     <BundleResource Include="Resources\associatesicon.png" />
     <BundleResource Include="Resources\settingsicon.png" />
     <BundleResource Include="Resources\feedicon.png" />
+    <BundleResource Include="Resources\backimage.jpg" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

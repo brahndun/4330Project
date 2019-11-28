@@ -34,7 +34,7 @@ namespace LoginNavigation.Models
         private string matchRequestsReceived;
         public string MatchRequestsReceived { get { return matchRequestsReceived; } set { matchRequestsReceived = value; OnPropertyChanged("matchRequestsReceived"); } }
         //A list of user IDs corresponding to users this user has successfully connected/paired with
-        private string associates;
+        private string associates = string.Empty;
         public string Associates { get { return associates; } set { associates = value; OnPropertyChanged("Associates"); } }
 
         //The user's profile pic, saved as an array of bytes.

@@ -1,18 +1,33 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.SettingsPage">
     <ContentPage.Content>
-        <TableView Intent="Menu">
-            <TableRoot>
-                <TableSection Title="General">
-                    <TextCell Text="Edit profile" Tapped="EditProfileClicked"/>
-                    <TextCell Text="Log out" TextColor="Red" Tapped="LogOut"/>
-                </TableSection>
-                <TableSection Title="Debug">
-                    <TextCell Text="Erase match requests" Tapped="EraseMatchRequestsTapped"/>
-                    <TextCell Text="Erase all associates" Tapped="EraseAssociatesTapped"/>
-                    <TextCell Text="Switch to Jackson Lambert" Tapped="SwitchToJacksonLambert" />
-                </TableSection>
-            </TableRoot>
-        </TableView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.02*"/>
+                <RowDefinition Height="0.04*"/>
+                <RowDefinition Height="0.08*"/>
+                <RowDefinition Height="0.8*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="nameLabel" Grid.Row="1" HorizontalTextAlignment="Center"/>
+            <Label x:Name="interestsLabel" Grid.Row = "2" HorizontalTextAlignment="Center"/>
+            <TableView Intent="Menu" Grid.Row="3">
+                <TableRoot>
+                    <TableSection Title="General">
+                        <TextCell Text="Edit profile" Tapped="EditProfileClicked"/>
+                        <TextCell Text="Log out" TextColor="Red" Tapped="LogOut"/>
+                    </TableSection>
+                    <TableSection Title="Debug">
+                        <TextCell Text="Erase match requests" Tapped="EraseMatchRequestsTapped"/>
+                        <TextCell Text="Erase interests" Tapped="EraseInterestsTapped"/>
+                        <TextCell Text="Erase all associates" Tapped="EraseAssociatesTapped"/>
+                        <TextCell Text="Switch to Jackson Lambert" Tapped="SwitchToJacksonLambert" />
+                        <TextCell Text="Ten Users" Tapped="TenUsersTapped"/>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

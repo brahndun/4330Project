@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{F0AA2B49-1A31-4495-AACE-0DD5AAA80139}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="LoginNavigation/App.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="LoginNavigation/MatchesPage.xaml.cs">
     <Files>
       <File FileName="LoginNavigation/VerificationCode.xaml.cs" Line="22" Column="14" />
       <File FileName="LoginNavigation/obj/Debug/netstandard2.0/MakeProfilePage.xaml.g.cs" />
@@ -19,7 +19,7 @@
       <File FileName="LoginNavigation/App.cs" Line="41" Column="14" />
       <File FileName="LoginNavigation/ForgotPassword.xaml.cs" />
       <File FileName="LoginNavigation/SettingsPage.xaml.cs" />
-      <File FileName="LoginNavigation/MatchesPage.xaml.cs" />
+      <File FileName="LoginNavigation/MatchesPage.xaml.cs" Line="1" Column="1" />
       <File FileName="LoginNavigation/VerifiyCode.cs" />
       <File FileName="LoginNavigation/MainPage.xaml.cs" />
       <File FileName="LoginNavigation/WriteDescriptionPage.xaml.cs" />
@@ -52,7 +52,9 @@
               </Node>
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
-              <Node name="App.cs" selected="True" />
+              <Node name="MatchesPage.xaml" expanded="True">
+                <Node name="MatchesPage.xaml.cs" selected="True" />
+              </Node>
             </Node>
             <Node name="LoginNavigation.iOS" expanded="True" />
           </Node>

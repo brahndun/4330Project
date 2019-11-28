@@ -1,5 +1,5 @@
---cache=/Users/Sarah/Projects/ImPACt/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone12.1-13.1/mtouch-cache
---sim=/Users/Sarah/Projects/ImPACt/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone12.1-13.1/LoginNavigationiOS.app
+--cache=/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone12.1-13.1/mtouch-cache
+--sim=/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/device-builds/iphone12.1-13.1/LoginNavigationiOS.app
 --executable=LoginNavigationiOS
  --debug
  --profiling
@@ -10,9 +10,9 @@
  --aot-options=-O=-float32
  --http-message-handler=NSUrlSessionHandler
  --abi=x86_64
---symbollist=/Users/Sarah/Projects/ImPACt/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone12.1-13.1/mtouch-symbols.list
+--symbollist=/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/obj/iPhoneSimulator/Debug/device-builds/iphone12.1-13.1/mtouch-symbols.list
  --dsym=no
--r=/Users/Sarah/Projects/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
+-r=/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/mscorlib.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.Core.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/System.dll
@@ -161,6 +161,18 @@
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.XPath.XmlDocument.dll
 -r=/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/Xamarin.iOS/Facades/System.Xml.Xsl.Primitives.dll
+-r=/Users/Sarah/.nuget/packages/dltoolkit.forms.controls.tagentryview/1.0.5/lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+netstandard1.0/DLToolkit.Forms.Controls.TagEntryView.dll
+-r=/Users/Sarah/.nuget/packages/newtonsoft.json/9.0.1/lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll
+-r=/Users/Sarah/.nuget/packages/plugin.permissions/3.0.0.12/lib/xamarinios10/Plugin.Permissions.dll
+-r=/Users/Sarah/.nuget/packages/rg.plugins.popup/1.2.0.223/lib/Xamarin.IOS/Rg.Plugins.Popup.IOS.dll
+-r=/Users/Sarah/.nuget/packages/rg.plugins.popup/1.2.0.223/lib/Xamarin.IOS/Rg.Plugins.Popup.dll
+-r=/Users/Sarah/.nuget/packages/sqlite-net-pcl/1.6.292/lib/netstandard1.1/SQLite-net.dll
+-r=/Users/Sarah/.nuget/packages/sqlitenetextensions/2.1.0/lib/netstandard1.1/SQLiteNetExtensions.dll
+-r=/Users/Sarah/.nuget/packages/sqlitepclraw.bundle_green/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_green.dll
+-r=/Users/Sarah/.nuget/packages/sqlitepclraw.bundle_green/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.batteries_v2.dll
+-r=/Users/Sarah/.nuget/packages/sqlitepclraw.core/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.core.dll
+-r=/Users/Sarah/.nuget/packages/sqlitepclraw.provider.sqlite3.ios_unified/1.1.13/lib/Xamarin.iOS10/SQLitePCLRaw.provider.sqlite3.dll
+-r=/Users/Sarah/.nuget/packages/xam.plugin.media/4.0.1.5/lib/xamarinios10/Plugin.Media.dll
 -r=/Users/Sarah/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Core.dll
 -r=/Users/Sarah/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll
 -r=/Users/Sarah/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll
@@ -199,7 +211,7 @@
 -r=/Users/Sarah/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/Sarah/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll
 -r=/Users/Sarah/.nuget/packages/xamarin.forms/4.1.0.555618/lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll
--r=/Users/Sarah/Projects/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
+-r=/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/bin/Debug/netstandard2.0/LoginNavigation.dll
  --target-framework=Xamarin.iOS,v1.0
---root-assembly=/Users/Sarah/Projects/ImPACt/iOS/bin/iPhoneSimulator/Debug/LoginNavigationiOS.exe
+--root-assembly=/Users/Sarah/Documents/GitHub/4330Project/ImPACt/iOS/bin/iPhoneSimulator/Debug/LoginNavigationiOS.exe
  

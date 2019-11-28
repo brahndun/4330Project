@@ -11,6 +11,14 @@ namespace LoginNavigation
         public SettingsPage()
         {
             InitializeComponent();
+
+            List<String> interests = new List<String>(App.UserLoggedIn.Interests.Split('^'));
+            for (int i = 0; i < interests.Count; i++)
+                interestsLabel.Text += interests[i] + ", ";
+            if (!String.IsNullOrEmpty(interestsLabel.Text))
+                interestsLabel.Text = interestsLabel.Text.Remove(interestsLabel.Text.Length - 2);
+
+            nameLabel.Text = App.UserLoggedIn.FullName;
         }
         async void LogOut(object sender, EventArgs e)
         {
@@ -36,8 +44,22 @@ namespace LoginNavigation
 
         async void EraseMatchRequestsTapped(object sender, EventArgs e)
         {
-            App.UserLoggedIn.MatchRequestsSent = String.Empty;
-            await App.Database.SaveUserAsync(App.UserLoggedIn);
+            var users = await App.Database.GetUsersAsync();
+            for (int i = 0; i < users.Count; i++)
+            {
+                users[i].MatchRequestsReceived = String.Empty;
+                users[i].MatchRequestsSent = String.Empty;
+                await App.Database.SaveUserAsync(users[i]);
+            }
+        }
+        async void EraseInterestsTapped(object sender, EventArgs e)
+        {
+            var users = await App.Database.GetUsersAsync();
+            for (int i = 0; i < users.Count; i++)
+            {
+                users[i].Interests = String.Empty;
+                await App.Database.SaveUserAsync(users[i]);
+            }
         }
         async void EraseAssociatesTapped(object sender, EventArgs e)
         {
@@ -48,6 +70,15 @@ namespace LoginNavigation
                 await App.Database.SaveUserAsync(users[i]);
             }
 
+        }
+
+        async void TenUsersTapped(object sender, EventArgs e)
+        {
+            var users = await App.Database.GetUsersAsync();
+            for (int i = 9; i < users.Count; i++)
+            {
+                await App.Database.DeleteUserAsync(users[i]);
+            }
         }
 
     }

@@ -36,10 +36,13 @@ namespace LoginNavigation
                     allUsers = allUsers.Where(x => x.Role == "Mentee").ToList();
 
                 //Remove all users the current user has already accepted to match with
-                List<String> myAssociates = new List<String>(App.UserLoggedIn.Associates.Split('^'));
-                //Removes all null values from the associates array
-                myAssociates = myAssociates.Where(x => !String.IsNullOrEmpty(x)).ToList();
-                allUsers = allUsers.Where(x => !myAssociates.Contains(allUsers[matchIndex].ID.ToString())).ToList();
+                if (!String.IsNullOrEmpty(App.UserLoggedIn.Associates))
+                {
+                    List<String> myAssociates = new List<String>(App.UserLoggedIn.Associates.Split('^'));
+                    //Removes all null values from the associates array
+                    myAssociates = myAssociates.Where(x => !String.IsNullOrEmpty(x)).ToList();
+                    allUsers = allUsers.Where(x => !myAssociates.Contains(allUsers[matchIndex].ID.ToString())).ToList();
+                }
 
                 //How many interests the user has in common with a mentor.
                 int[] interestHits = new int[allUsers.Count];
@@ -91,7 +94,7 @@ namespace LoginNavigation
             {
                 //Changes the string of IDs stored in the logged in user's MatchRequestsSent property
                 //and changes it to a list of IDs
-                List<String> matchRequestsReceived = new List<String>(App.UserLoggedIn.MatchRequestsReceived.Split('^'));
+                List<String> matchRequestsReceived = new List<String>(App.UserLoggedIn.MatchRequestsReceived.Split('^')).Where(x => !String.IsNullOrEmpty(x)).ToList();
 
                 if (matchRequestsReceived.Contains(allUsers[matchIndex].ID.ToString()))
                     ChangeRequestButtonToAcceptRequest();
