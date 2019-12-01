@@ -33,6 +33,7 @@ namespace LoginNavigation
         async void SwitchToJacksonLambert(object sender, EventArgs e)
         {
             App.UserLoggedIn = await App.Database.GetUserAsync(2);
+            App.tabbedPage.currentMatchesPage.Reset();
             await Navigation.PopAsync();
             await Navigation.PushAsync(new MainPage());
         }
@@ -75,11 +76,23 @@ namespace LoginNavigation
         async void TenUsersTapped(object sender, EventArgs e)
         {
             var users = await App.Database.GetUsersAsync();
-            for (int i = 9; i < users.Count; i++)
+            for (int i = 10; i < users.Count; i++)
             {
                 await App.Database.DeleteUserAsync(users[i]);
             }
         }
 
+        async void DeleteThisUser(object sender, EventArgs e)
+        {
+            var user = await App.Database.GetUserAsync(App.UserLoggedIn.ID);
+            await App.Database.DeleteUserAsync(user);
+            App.tabbedPage.currentMatchesPage.Reset();
+            App.IsUserLoggedIn = false;
+            App.UserLoggedIn = null;
+            var navPage = new NavigationPage(new LoginPage());
+            navPage.BarBackgroundColor = Color.FromRgb(79, 168, 232);
+            navPage.BarTextColor = Color.White;
+            App.Current.MainPage = navPage;
+        }
     }
 }

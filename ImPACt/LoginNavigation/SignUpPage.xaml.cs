@@ -48,7 +48,9 @@ namespace LoginNavigation
         {
             bool valid = false;
             //Error when the user didn't enter an email address
-            if (user.Email.Length <= 0)
+            if (String.IsNullOrEmpty(user.Email) || String.IsNullOrEmpty(passwordEntry.Text) || String.IsNullOrEmpty(passwordRepeatEntry.Text))
+                messageLabel.Text = "Please fill out all forms";
+            else if (user.Email.Length <= 0)
                 messageLabel.Text = "Please enter an email address";
             //Error when user's email already exists within the database
             else if (allUsers.Find(x => x.Email.ToLower() == user.Email.ToLower()) != null)

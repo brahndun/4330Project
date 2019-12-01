@@ -25,6 +25,7 @@
                         <TextCell Text="Erase all associates" Tapped="EraseAssociatesTapped"/>
                         <TextCell Text="Switch to Jackson Lambert" Tapped="SwitchToJacksonLambert" />
                         <TextCell Text="Ten Users" Tapped="TenUsersTapped"/>
+                        <TextCell Text="Delete this user" Tapped="DeleteThisUser"/> 
                     </TableSection>
                 </TableRoot>
             </TableView>

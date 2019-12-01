@@ -104,6 +104,9 @@
     <BundleResource Include="Resources\settingsicon.png" />
     <BundleResource Include="Resources\feedicon.png" />
     <BundleResource Include="Resources\backimage.jpg" />
+    <BundleResource Include="Resources\signupback.jpg" />
+    <BundleResource Include="Resources\signupback2.jpg" />
+    <BundleResource Include="Resources\signupback3.jpg" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />

@@ -8,8 +8,8 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.1*"/>
                 <RowDefinition Height="0.24*"/>
-                <RowDefinition Height="0.39*"/>
-                <RowDefinition Height="0.36*"/>
+                <RowDefinition Height="0.405*"/>
+                <RowDefinition Height="0.345*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="0.15*"/>
@@ -27,7 +27,7 @@
             <BoxView Grid.Row="2" Grid.Column="1" Color="White" CornerRadius="10" HorizontalOptions="FillAndExpand"/>
             <StackLayout Grid.Row="2" Grid.Column="1" Margin="32,32,32,32">
                 <Entry x:Name="emailEntry" Placeholder="Email" VerticalOptions="Center"/>
-			    <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" VerticalOptions="Center"/>
+			    <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" VerticalOptions="Center" Margin="0,0,0,10"/>
 			    <Button Text="Login" Clicked="OnLoginButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,0" FontAttributes="Bold" />
                 <Button Text="Forgot Password" Clicked="OnForgotPassword" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,0" FontAttributes="Bold"/>
 			    <Label x:Name="messageLabel" HorizontalTextAlignment="Center"/>

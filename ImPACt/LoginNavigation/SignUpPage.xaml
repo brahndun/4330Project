@@ -3,20 +3,34 @@
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
 			 x:Class="LoginNavigation.SignUpPage">
 	<ContentPage.Content>
-		<StackLayout VerticalOptions="Center" Margin="64, 64, 64, 64">
-			<Label Text="Email" />
-            <Entry Placeholder="Email" 
-                   x:Name="emailEntry"/>
-			<Label Text="Password" />
-            <Entry Placeholder="Password"
-                   x:Name="passwordEntry"
-                   IsPassword="true"/>
-			<Label Text="Repeat Password" />
-            <Entry Placeholder="Repeat password"
-                   x:Name="passwordRepeatEntry" 
-                   IsPassword="true"/>
-			<Button Text="Sign Up" Clicked="OnSignUpButtonClicked" />
-			<Label x:Name="messageLabel" />
-		</StackLayout>
-	</ContentPage.Content>
+		<Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="0.24*"/>
+                <RowDefinition Height="0.40*"/>
+                <RowDefinition Height="0.35*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.15*"/>
+                <ColumnDefinition Width="0.7*"/>
+                <ColumnDefinition Width="0.15*"/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.RowSpan="4" Grid.ColumnSpan="3"
+                Aspect="AspectFill"
+                Source="signupback3.jpg"
+                RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            </Image>
+            <Label Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="54" FontAttributes="Bold" TextColor="#7425db" Text="ImPACt"/>
+                
+            <BoxView Grid.Row="2" Grid.Column="1" Color="White" CornerRadius="10" HorizontalOptions="FillAndExpand"/>
+            <StackLayout Grid.Row="2" Grid.Column="1" Margin="32,32,32,32">
+                <Entry x:Name="emailEntry" Placeholder="Email" VerticalOptions="Center"/>
+			    <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" VerticalOptions="Center"/>
+                <Entry x:Name="passwordRepeatEntry" IsPassword="true" Placeholder="Password" VerticalOptions="Center" Margin="0,0,0,10"/>
+			    <Button Text="Register account" Clicked="OnSignUpButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,0" FontAttributes="Bold" />
+			    <Label x:Name="messageLabel" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+		</Grid>
+    </ContentPage.Content>
 </ContentPage>
