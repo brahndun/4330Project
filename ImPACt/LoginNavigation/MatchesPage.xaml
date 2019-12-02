@@ -30,14 +30,14 @@
                     <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.13*"/>
-                    <ColumnDefinition Width="0.74*"/>
-                    <ColumnDefinition Width="0.13*"/>
+                    <ColumnDefinition Width="0.2*"/>
+                    <ColumnDefinition Width="0.6*"/>
+                    <ColumnDefinition Width="0.2*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button x:Name="backButton" VerticalOptions="Center" HorizontalOptions="Center" Text="Back" Clicked="OnBackButtonClicked"/>
-                <Button VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="Request to connect" x:Name="requestButton" Clicked="OnRequestButtonClicked"/>
-                <Button x:Name="nextButton" VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="2" Text="Next" Clicked="OnNextButtonClicked"/>
+                <Button x:Name="backButton" VerticalOptions="Center" HorizontalOptions="Start" Text="Back" Clicked="OnBackButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="16" Padding="15,0" FontAttributes="Bold"/>
+                <Button VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="Request to connect" x:Name="requestButton" Clicked="OnRequestButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="16" Padding="15,0" FontAttributes="Bold"/>
+                <Button x:Name="nextButton" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="2" Text="Next" Clicked="OnNextButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="16" Padding="15,0" FontAttributes="Bold"/>
             </Grid>
         </Grid>
     </ContentPage.Content>

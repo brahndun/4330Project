@@ -13,12 +13,13 @@ namespace LoginNavigation
             InitializeComponent();
 
             List<String> interests = new List<String>(App.UserLoggedIn.Interests.Split('^'));
+            interestsLabel.Text = "Interests: ";
             for (int i = 0; i < interests.Count; i++)
                 interestsLabel.Text += interests[i] + ", ";
             if (!String.IsNullOrEmpty(interestsLabel.Text))
                 interestsLabel.Text = interestsLabel.Text.Remove(interestsLabel.Text.Length - 2);
 
-            nameLabel.Text = App.UserLoggedIn.FullName;
+            nameLabel.Text = "Logged in as " + App.UserLoggedIn.FullName;
         }
         async void LogOut(object sender, EventArgs e)
         {

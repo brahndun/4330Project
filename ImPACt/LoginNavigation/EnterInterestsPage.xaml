@@ -13,7 +13,7 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="End" Orientation="Vertical">
-                <Button Text="Next" Clicked="OnNextButtonClicked" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Next" Clicked="OnNextButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,0" FontAttributes="Bold"/>
             </StackLayout>
                 
         </StackLayout>

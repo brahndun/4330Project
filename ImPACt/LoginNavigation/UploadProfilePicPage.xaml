@@ -7,13 +7,13 @@
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="0.1*" />
-                <RowDefinition Height="0.7*" />
-                <RowDefinition Height="0.2*" />
+                <RowDefinition Height="0.64*" />
+                <RowDefinition Height="0.26*" />
             </Grid.RowDefinitions>
             <Label Text="Upload a picture of yourself for your profile" VerticalOptions="Start"/>
             <Image Source="https://images.app.goo.gl/2NiQnSseAaC9Yvwh9" Grid.Row="1" x:Name="profilePic" Aspect="AspectFit"/>
-            <Button Text="Upload picture" x:Name="pickPicture" Grid.Row="2"/>
-            <Button Text="Confirm" VerticalOptions="End" Grid.Row="2" Clicked="OnConfirmButtonClicked"/>
+            <Button Text="Upload picture" x:Name="pickPicture" Grid.Row="2" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,0" FontAttributes="Bold" Margin="0,0,0,12"/>
+            <Button Text="Confirm" VerticalOptions="End" Grid.Row="2" Clicked="OnConfirmButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" Padding="30,0" FontAttributes="Bold"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>
