@@ -10,28 +10,39 @@ namespace LoginNavigation
     {
 
         List<String> interests;
-        Label interestsLabel0;
+        Label interestsLabel0, interestsLabel1;
         public EnterInterestsPage()
         {
             InitializeComponent();
             this.BindingContext = new InterestsPageViewModel();
             interests = new List<String>(App.UserLoggedIn.Interests.Split('^'));
+
+            interestsLabel0 = new Label { HorizontalOptions = LayoutOptions.Center };
+            interestsLabel0.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[0]");
+
+            interestsLabel1 = new Label { HorizontalOptions = LayoutOptions.Center };
+            interestsLabel1.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[1]");
+
+            if (interests.Contains(interestsLabel0.Text))
+            {
+                interestsSwitch0.IsToggled = true;
+            }
         }
 
         public void EnterInterestsPageCS()
-        {
+        { 
             var picker = new Picker { Title = "Select a Subject of Interest:", TitleColor = Color.Red };
             picker.SetBinding(Picker.ItemsSourceProperty, "Interests");
             picker.SetBinding(Picker.SelectedItemProperty, "SelectedInterest");
             picker.ItemDisplayBinding = new Binding("Subject");
 
-            interestsLabel0 = new Label { HorizontalOptions = LayoutOptions.Center };
+            /*interestsLabel0 = new Label { HorizontalOptions = LayoutOptions.Center };
             interestsLabel0.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[0]");
             interestsLabel0.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
-            var interestsLabel1 = new Label { HorizontalOptions = LayoutOptions.Center };
+            interestsLabel1 = new Label { HorizontalOptions = LayoutOptions.Center };
             interestsLabel1.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[1]");
-            interestsLabel1.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
+            interestsLabel1.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");*/
 
             var interestsLabel2 = new Label { HorizontalOptions = LayoutOptions.Center };
             interestsLabel2.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[2]");
@@ -77,6 +88,20 @@ namespace LoginNavigation
                 interestsSwitch0.IsToggled = true;
             }
             interestsSwitch0.Toggled += interestsSwitch0_Toggled;
+
+            Switch interestsSwitch1 = new Switch
+            {
+                IsToggled = false,
+                OnColor = Color.Blue,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+                IsVisible = true
+            };
+            if (interests.Contains(interestsLabel1.Text))
+            {
+                interestsSwitch1.IsToggled = true;
+            }
+            interestsSwitch1.Toggled += interestsSwitch1_Toggled;
             /*var interestsCheckBox0 = new CheckBox { VerticalOptions = LayoutOptions.Center };
             
             interestsCheckBox0.CheckedChanged += (sender, e) =>
@@ -251,9 +276,10 @@ namespace LoginNavigation
                     Children =
                     {
                         new Label { Text = "Interests", FontAttributes = FontAttributes.Bold, HorizontalOptions = LayoutOptions.Center },
-                        
+
+                        interestsSwitch0,
                         interestsLabel0,
-                        //interestsCheckBox0,
+                        interestsSwitch1,
                         interestsLabel1,
                         //interestsCheckBox1,
                         interestsLabel2,
@@ -307,6 +333,17 @@ namespace LoginNavigation
             else
             {
                 interests.Remove(interestsLabel0.Text);
+            }
+        }
+        private void interestsSwitch1_Toggled(object sender, ToggledEventArgs e)
+        {
+            if (e.Value)
+            {
+                interests.Add(interestsLabel1.Text);
+            }
+            else
+            {
+                interests.Remove(interestsLabel1.Text);
             }
         }
         public async void OnNextButtonClicked(object sender, EventArgs e)

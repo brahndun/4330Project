@@ -15,8 +15,20 @@
                             ItemsSource="{Binding Interests}" 
                             ItemDisplayBinding="{Binding Subject}"
                             SelectedItem="{Binding SelectedInterest}" />
+                        <Switch x:Name="interestsSwitch0"
+                            Toggled="interestsSwitch0_Toggled"
+                            IsToggled="False"
+                            OnColor="Orange"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand" /> 
                         <Label Text="{Binding SelectedInterest.SubjectInterests[0]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
+                        <Switch x:Name="interestsSwitch1"
+                            Toggled="interestsSwitch1_Toggled"
+                            IsToggled="False"
+                            OnColor="Orange"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand" />
                         <Label Text="{Binding SelectedInterest.SubjectInterests[1]}"
                             FontAttributes="Italic" HorizontalOptions="Center" />
                         <Label Text="{Binding SelectedInterest.SubjectInterests[2]}"
