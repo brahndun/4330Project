@@ -62,5 +62,10 @@ namespace LoginNavigation
         {
             await Navigation.PushAsync(new ActiveMatchesPage());
         }
+
+        async void UserClicked(object sender, ItemTappedEventArgs e)
+        {
+            await Navigation.PushAsync(new DirectMessaging());
+        }
     }
 }

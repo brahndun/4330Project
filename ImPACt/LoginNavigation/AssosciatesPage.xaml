@@ -15,7 +15,7 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Label Text="Associates:"/> 
-            <ListView Grid.Row="1" ItemsSource="{Binding Associates}" HasUnevenRows="true">
+            <ListView Grid.Row="1" ItemsSource="{Binding Associates}" HasUnevenRows="true" ItemTapped="UserClicked">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
