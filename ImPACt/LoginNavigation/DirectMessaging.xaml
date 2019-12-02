@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginNavigation.DirectMessaging"
+             BackgroundColor="LightGray">
+          <Grid>
+                <Grid.RowDefinitions>
+                <RowDefinition Height="0.13*"/>
+                <RowDefinition Height="0.80*"/>
+                <RowDefinition Height="0.094*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+          
+                     
+            <Frame
+                Grid.Row="0"
+                Margin="0,0,0,15"
+                >
+                <Label Text="Albert Einstein"
+                 HorizontalTextAlignment="Center"
+                 VerticalTextAlignment="Center"/>
+                
+            </Frame>
+            
+         <ScrollView Grid.Row="1">
+          <StackLayout Padding="8"
+                     Grid.Row="1">
+            <Frame BackgroundColor="#4fa8e8"
+                   Grid.Row="1"
+                   Margin="0,0,0,15"
+                   WidthRequest="180"
+                   BorderColor=""
+                   CornerRadius="10"
+                   HorizontalOptions="Start"
+                   HasShadow="True">
+                <Label Text="Have you got any questions from your courses?" />
+            </Frame>
+            <Frame BackgroundColor="#ffffff"
+                   Margin="0,0,0,15"
+                   WidthRequest="180"
+                   HorizontalOptions="End"
+                   BorderColor=""
+                   CornerRadius="10"
+                   HasShadow="True">
+                <Label Text="Yes! What is a derivative?" />
+            </Frame>
+            <Frame BackgroundColor="#ffffff"
+                   Margin="0,0,0,15"
+                   WidthRequest="180"
+                   HorizontalOptions="End"
+                   BorderColor=""
+                   CornerRadius="10"
+                   HasShadow="True">
+                <Label Text="Why do I have to take art?" />
+            </Frame>
+            <Frame BackgroundColor="#4fa8e8"
+                   Margin="0,0,0,15"
+                   WidthRequest="200"
+                   BorderColor=""
+                   CornerRadius="10"
+                   HorizontalOptions="Start"
+                   HasShadow="True">
+                <Label Text="Good questions. Come by my office tomorrow around lunch and I can explain." />
+            </Frame>
+            <Frame BackgroundColor="#ffffff"
+                   Margin="0,0,0,15"
+                   WidthRequest="180"
+                   HorizontalOptions="End"
+                   BorderColor=""
+                   CornerRadius="10"
+                   HasShadow="True">
+                <Label Text="iight ima fuck witcha" />
+            </Frame>
+        </StackLayout>
+    </ScrollView>
+        <StackLayout
+            Grid.Row="2"
+            BackgroundColor="#ffffff">
+            <!--<Frame
+                Grid.Row="2"
+                Margin="0,0,0,0"
+                HasShadow="False"
+                BorderColor="Gray"
+                CornerRadius="0"
+                >
+                <Label Text="This should be the third grid"
+                       HorizontalTextAlignment="End"/>
+                 
+            </Frame>-->
+            <Editor Grid.Row="2"
+                    
+                    Placeholder="Enter message here"/>
+
+
+        </StackLayout>
+   </Grid>
+</ContentPage>

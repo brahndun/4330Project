@@ -3,8 +3,8 @@
     <ContentPage.Content>
         <Grid Margin="48,48,48,48">
             <Grid.RowDefinitions>
-                <RowDefinition Height="0.95*"/>
-                <RowDefinition Height="0.05*"/>
+                <RowDefinition Height="0.8*"/>
+                <RowDefinition Height="0.2*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -25,10 +25,10 @@
                     <RowDefinition Height="1*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.85*"/>
-                    <ColumnDefinition Width="0.15*"/>
+                    <ColumnDefinition Width="0.6*"/>
+                    <ColumnDefinition Width="0.4*"/>
                 </Grid.ColumnDefinitions>
-                <Button Grid.Column="1" Text="Next" Clicked="OnNextButtonClicked"/>
+                <Button Grid.Column="1" Text="Next" Clicked="OnNextButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="End" VerticalOptions="End" Padding="30,0" FontAttributes="Bold"/>
             </Grid>
         </Grid>
     </ContentPage.Content>

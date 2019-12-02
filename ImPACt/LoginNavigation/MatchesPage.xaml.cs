@@ -189,7 +189,11 @@ namespace LoginNavigation
                 Text = "Accept Request",
                 HorizontalOptions = LayoutOptions.Center,
                 VerticalOptions = LayoutOptions.Center,
-                TextColor = Color.Green,
+                TextColor = Color.White,
+                BackgroundColor = Color.Green,
+                CornerRadius = 16,
+                Padding = new Thickness(15, 0, 15, 0),
+                FontAttributes = FontAttributes.Bold
             };
             button.Clicked += AcceptMatchRequest;
             bottomGrid.Children.Add(button, 1, 0);

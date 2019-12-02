@@ -54,6 +54,8 @@ namespace LoginNavigation
 
         public async void OnConfirmButtonClicked(object sender, EventArgs e)
         {
+            if (App.tabbedPage != null)
+                App.tabbedPage.currentMatchesPage.Reset();
             Navigation.InsertPageBefore(new MainPage(), Navigation.NavigationStack.First());
             await Navigation.PopToRootAsync();
         }

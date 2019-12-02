@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj": {}
+    "/Users/brandon/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj": {}
   },
   "projects": {
-    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj": {
+    "/Users/brandon/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj",
+        "projectUniqueName": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj",
         "projectName": "LoginNavigation.Droid",
-        "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj",
-        "packagesPath": "/Users/Sarah/.nuget/packages/",
-        "outputPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/Droid/obj/",
+        "projectPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj",
+        "packagesPath": "/Users/brandon/.nuget/packages/",
+        "outputPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/Droid/obj/",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "configFilePaths": [
-          "/Users/Sarah/.config/NuGet/NuGet.Config"
+          "/Users/brandon/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "monoandroid90"
@@ -26,8 +26,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
-                "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj"
+              "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
+                "projectPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj"
               }
             }
           }
@@ -48,20 +48,20 @@
         }
       }
     },
-    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
+    "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
+        "projectUniqueName": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
         "projectName": "LoginNavigation",
-        "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
-        "packagesPath": "/Users/Sarah/.nuget/packages/",
-        "outputPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/",
+        "projectPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
+        "packagesPath": "/Users/brandon/.nuget/packages/",
+        "outputPath": "/Users/brandon/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/Sarah/.config/NuGet/NuGet.Config"
+          "/Users/brandon/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
