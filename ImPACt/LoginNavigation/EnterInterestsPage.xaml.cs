@@ -10,22 +10,22 @@ namespace LoginNavigation
     {
 
         List<String> interests;
+        Label interestsLabel0;
         public EnterInterestsPage()
         {
             InitializeComponent();
             this.BindingContext = new InterestsPageViewModel();
+            interests = new List<String>(App.UserLoggedIn.Interests.Split('^'));
         }
 
         public void EnterInterestsPageCS()
         {
-            interests = new List<String>(App.UserLoggedIn.Interests.Split('^')); 
-
             var picker = new Picker { Title = "Select a Subject of Interest:", TitleColor = Color.Red };
             picker.SetBinding(Picker.ItemsSourceProperty, "Interests");
             picker.SetBinding(Picker.SelectedItemProperty, "SelectedInterest");
             picker.ItemDisplayBinding = new Binding("Subject");
 
-            var interestsLabel0 = new Label { HorizontalOptions = LayoutOptions.Center };
+            interestsLabel0 = new Label { HorizontalOptions = LayoutOptions.Center };
             interestsLabel0.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[0]");
             interestsLabel0.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
@@ -65,11 +65,20 @@ namespace LoginNavigation
             interestsLabel9.SetBinding(Label.TextProperty, "SelectedInterest.SubjectInterests[9]");
             interestsLabel9.SetDynamicResource(VisualElement.StyleProperty, "TitleStyle");
 
-            CheckBox interestsCheckBox0 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            Switch interestsSwitch0 = new Switch
+            {
+                IsToggled = false,
+                OnColor = Color.Blue,
+                HorizontalOptions = LayoutOptions.CenterAndExpand,
+                VerticalOptions = LayoutOptions.CenterAndExpand
+            };
             if (interests.Contains(interestsLabel0.Text))
             {
-                interestsCheckBox0.IsChecked = true;
+                interestsSwitch0.IsToggled = true;
             }
+            interestsSwitch0.Toggled += interestsSwitch0_Toggled;
+            /*var interestsCheckBox0 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            
             interestsCheckBox0.CheckedChanged += (sender, e) =>
             {
                 if (e.Value)
@@ -82,7 +91,7 @@ namespace LoginNavigation
                 }
             };
 
-            CheckBox interestsCheckBox1 = new CheckBox { VerticalOptions = LayoutOptions.Center };
+            var interestsCheckBox1 = new CheckBox { VerticalOptions = LayoutOptions.Center };
             if (interests.Contains(interestsLabel1.Text))
             {
                 interestsCheckBox1.IsChecked = true;
@@ -233,7 +242,7 @@ namespace LoginNavigation
                 {
                     interests.Remove(interestsLabel9.Text);
                 }
-            };
+            };*/
             Content = new ScrollView
             {
                 Content = new StackLayout
@@ -244,25 +253,25 @@ namespace LoginNavigation
                         new Label { Text = "Interests", FontAttributes = FontAttributes.Bold, HorizontalOptions = LayoutOptions.Center },
                         
                         interestsLabel0,
-                        interestsCheckBox0,
+                        //interestsCheckBox0,
                         interestsLabel1,
-                        interestsCheckBox1,
+                        //interestsCheckBox1,
                         interestsLabel2,
-                        interestsCheckBox2,
+                        //interestsCheckBox2,
                         interestsLabel3,
-                        interestsCheckBox3,
+                        //interestsCheckBox3,
                         interestsLabel4,
-                        interestsCheckBox4,
+                        //interestsCheckBox4,
                         interestsLabel5,
-                        interestsCheckBox5,
+                        //interestsCheckBox5,
                         interestsLabel6,
-                        interestsCheckBox6,
+                        //interestsCheckBox6,
                         interestsLabel7,
-                        interestsCheckBox7,
+                        //interestsCheckBox7,
                         interestsLabel8,
-                        interestsCheckBox8,
-                        interestsLabel9,
-                        interestsCheckBox9
+                        //interestsCheckBox8,
+                        interestsLabel9//,
+                        //interestsCheckBox9
 					}
                 }
             };
@@ -289,6 +298,17 @@ namespace LoginNavigation
             }
         }*/
 
+        private void interestsSwitch0_Toggled(object sender, ToggledEventArgs e)
+        {
+            if (e.Value)
+            {
+                interests.Add(interestsLabel0.Text);
+            }
+            else
+            {
+                interests.Remove(interestsLabel0.Text);
+            }
+        }
         public async void OnNextButtonClicked(object sender, EventArgs e)
         {
             /*if(interests.Count > 10)
