@@ -30,7 +30,7 @@ namespace LoginNavigation
                 Margin = new Thickness(0, 0, 0, 15),
                 WidthRequest = 180,
                 CornerRadius = 10,
-                HorizontalOptions = LayoutOptions.Start,
+                HorizontalOptions = LayoutOptions.End,
                 HasShadow = true,
                 BackgroundColor = Color.FromHex("#4fa8e8"),
                 Content = new Label() { Text = newMessageEditor.Text}

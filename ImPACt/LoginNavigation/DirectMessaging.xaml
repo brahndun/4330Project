@@ -34,7 +34,7 @@
               <Frame BackgroundColor="#ffffff"
                    Margin="0,0,0,15"
                    WidthRequest="180"
-                   HorizontalOptions="End"
+                   HorizontalOptions="Start"
                    CornerRadius="10"
                    HasShadow="True">
                 <Label Text="Thank you for agreeing to be my mentor!" />
@@ -44,7 +44,7 @@
                    Margin="0,0,0,15"
                    WidthRequest="180"
                    CornerRadius="10"
-                   HorizontalOptions="Start"
+                   HorizontalOptions="End"
                    HasShadow="True">
                 <Label Text="You're welcome. I'm looking forward to working together." />
             </Frame>
@@ -52,7 +52,7 @@
             <Frame BackgroundColor="#ffffff"
                    Margin="0,0,0,15"
                    WidthRequest="180"
-                   HorizontalOptions="End"
+                   HorizontalOptions="Start"
                    CornerRadius="10"
                    HasShadow="True">
                 <Label Text="Can you finish my homework?" />
