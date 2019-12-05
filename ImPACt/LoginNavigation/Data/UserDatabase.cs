@@ -49,15 +49,6 @@ namespace LoginNavigation.Data
                             .FirstOrDefaultAsync();
         }
 
-        //This function shouldn't exist but it shouldn't be deleted until
-        //after the presentation just in case it breaks something
-        public Task<User> GetUserAsynch(string email)
-        {
-            return _database.Table<User>()
-                            .Where(i => i.Email == email)
-                            .FirstOrDefaultAsync();
-        }
-
         //Saves a user object to the database
         public Task<int> SaveUserAsync(User user)
         {
