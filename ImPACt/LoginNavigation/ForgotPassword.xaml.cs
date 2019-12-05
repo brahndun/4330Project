@@ -9,11 +9,13 @@ namespace LoginNavigation
 {
     public partial class ForgotPassword : ContentPage
     {
+        //Constructor for the ForgotPassword page.
         public ForgotPassword()
         {
             InitializeComponent();
         }
 
+        //The Function mapped to the interactive button on the .xaml page for Forgot Password.
         async void SendEmail(object sender, EventArgs e)
         {
             //Ensures that the email provided exists for a user within the system
@@ -31,16 +33,16 @@ namespace LoginNavigation
                     var x = r.Next(0, 1000000);
                     VerifyCode.code = x.ToString("000000");
                     VerifyCode.sentTo = emailEntry.Text;
-
+                    //Compose the email
                     mail.From = new MailAddress("impactapp4330@gmail.com");
                     mail.To.Add(emailEntry.Text);
                     mail.Subject = "Reset Your Password";
                     mail.Body = "To reset your password, use the code below in the ImPACt app:\n\n" + VerifyCode.code;
-
+                    //Create a connection
                     SmtpServer.Port = 587;
                     SmtpServer.Credentials = new System.Net.NetworkCredential("impactapp4330@gmail.com", "4hZj3M%cT&huQJr4");
                     SmtpServer.EnableSsl = true;
-
+                    //Send the email over the connection
                     SmtpServer.Send(mail);
 
                     //Sends the user to a page where they can enter the code to reset their password

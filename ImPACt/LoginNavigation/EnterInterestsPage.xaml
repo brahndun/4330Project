@@ -4,7 +4,11 @@
         <StackLayout Margin="48,48,48,48"  Orientation="Horizontal">
             <StackLayout VerticalOptions="Start" HorizontalOptions="FillAndExpand" >
                 <Label Text="Enter your interests: "/>
-                <Entry Placeholder = "Ex: software engineering" x:Name="interestEntry" Completed="EnterPressed"></Entry>
+                <!-- The entry box where users can type in their interests. 
+                Upon completing, the function "EnterPressed" it called, which is defined in the attached .cs file.-->
+                <Entry Placeholder = "Ex: software engineering" 
+                       x:Name="interestEntry" 
+                       Completed="EnterPressed"></Entry>
                 <Label Text="Press enter to add the entry to your list of interests."/>
                 <Label Text="Your interests will help match you with your most compatile mentors or mentees."/>
 
@@ -13,7 +17,17 @@
             </StackLayout>
 
             <StackLayout VerticalOptions="End" Orientation="Vertical">
-                <Button Text="Next" Clicked="OnNextButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,0" FontAttributes="Bold"/>
+                <!-- The next button, which takes the user to the page to write their description of themselves, when clicked.  
+                It is mapped to the function "OnNextButtonClicked" whiche is defined in the attached .cs file.-->
+                <Button Text="Next" 
+                        Clicked="OnNextButtonClicked" 
+                        BackgroundColor="#4fa8e8" 
+                        TextColor="White" 
+                        CornerRadius="25" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center" 
+                        Padding="30,0" 
+                        FontAttributes="Bold"/>
             </StackLayout>
                 
         </StackLayout>
