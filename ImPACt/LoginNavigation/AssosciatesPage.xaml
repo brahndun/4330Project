@@ -1,5 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage NavigationPage.HasNavigationBar="False"  xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.AssosciatesPage">
+<ContentPage NavigationPage.HasNavigationBar="False"  
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="LoginNavigation.AssosciatesPage">
+    <!-- The toolbar with a linked function names OnMatchRequestsButtonClicked 
+    which is activated when the Match Requests button is clicked. -->
     <ContentPage.ToolbarItems>
 		<ToolbarItem Text="Match requests" Clicked="OnMatchRequestsButtonClicked" />
 	</ContentPage.ToolbarItems>
@@ -14,8 +19,16 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Associates:"/> 
-            <ListView Grid.Row="1" ItemsSource="{Binding Associates}" HasUnevenRows="true" ItemTapped="UserClicked">
+            <Label Text="Associates:"/>
+            <!-- A list view where the Item Source is bound to Associates,
+            an ObservableCollection of the User Model,
+            and has a function named UserClicked mapped to User Interaction of Item Tapped,
+            both of which are definied in the attached CS page AssociatesPage-->
+            <ListView 
+                Grid.Row="1" 
+                ItemsSource="{Binding Associates}" 
+                HasUnevenRows="true" 
+                ItemTapped="UserClicked">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -27,14 +40,24 @@
                                     <ColumnDefinition Width="0.7*" />
                                     <ColumnDefinition Width="0.3*"/>
                                 </Grid.ColumnDefinitions>
+                                <!-- A label with the binding to the FullName attribute in User Model 
+                                pulled from the Associates collection defined in the attached .cs file. -->
                                 <Label Text="{Binding FullName}" VerticalOptions="End"/>
-                                <Label Text="Message > " Grid.Column="1" HorizontalOptions="End" VerticalOptions="End"/>
+                                <Label Text="Message > " 
+                                       Grid.Column="1" 
+                                       HorizontalOptions="End" 
+                                       VerticalOptions="End"/>
                             </Grid>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Label Grid.Row="2" VerticalTextAlignment="End" HorizontalTextAlignment="Center" Text= "You haven't made any associates yet" x:Name="noAssociates" IsVisible="False"/>
+            <Label Grid.Row="2" 
+                   VerticalTextAlignment="End" 
+                   HorizontalTextAlignment="Center" 
+                   Text= "You haven't made any associates yet" 
+                   x:Name="noAssociates" 
+                   IsVisible="False"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

@@ -64,12 +64,14 @@ namespace LoginNavigation
             }
 
         }
-
+        //A function that maps to the toolbar navigation in the .xaml structure.
         async void OnMatchRequestsButtonClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new ActiveMatchesPage());
         }
 
+        //A function that maps to the list view of the different Associates.  
+        //When clicked, it will navigate to the Direct Messaging page between the two Users.
         async void UserClicked(object sender, ItemTappedEventArgs e)
         {
             await Navigation.PushAsync(new DirectMessaging());
