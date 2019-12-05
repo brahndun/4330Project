@@ -17,26 +17,35 @@ namespace LoginNavigation
         {
             InitializeComponent();
 
+            //Adds an event to the logged in user. Whenever their match requests change,
+            //the list on this page containing the user's match requests will update
             App.UserLoggedIn.PropertyChanged += OnRequestsChanged;
 
+            //Loads the user's match requests onto the page.
             LoadItems();
 
+            //Xamarin requires this to be able to display the match requests
             BindingContext = this;
         }
 
+        //This function is called whenever the user's requests change. It reloads the
+        //user's interests onto the page
         public async void OnRequestsChanged(object sender, PropertyChangedEventArgs e)
         {
             LoadItems();
         }
 
+        //Loads the user's interests onto the page
         async void LoadItems()
         {
-
+            //If the current MatchRequests list on this page is null, create a list.
+            //Otherwise, clear it and readd the elements.
             if (MatchRequests == null)
                 MatchRequests = new ObservableCollection<User>();
             else
                 MatchRequests.Clear();
 
+            //If the user has sent match requests to other users, load them o
             if (!String.IsNullOrEmpty(App.UserLoggedIn.MatchRequestsSent))
             {
 
@@ -47,7 +56,6 @@ namespace LoginNavigation
 
                 for (int i = 0; i < matchRequestsSent.Count - 1; i++)
                 {
-                    Console.WriteLine("val: " + matchRequestsSent[i]);
                     int val = Convert.ToInt32(matchRequestsSent[i]);
                     var u = await App.Database.GetUserAsync(val);
                     if (!MatchRequests.Contains(u)) 
@@ -55,6 +63,7 @@ namespace LoginNavigation
                 }
             }
 
+            //If the user has received match requests from other users, load them onto the page
             else if (!String.IsNullOrEmpty(App.UserLoggedIn.MatchRequestsReceived))
             {
                 noMatches.IsVisible = false;
@@ -64,19 +73,21 @@ namespace LoginNavigation
 
                 for (int i = 0; i < matchRequestsReceived.Count - 1; i++)
                 {
-                    Console.WriteLine("val: " + matchRequestsReceived[i]);
                     int val = Convert.ToInt32(matchRequestsReceived[i]);
                     var u = await App.Database.GetUserAsync(val);
                     if (!MatchRequests.Contains(u))
                         MatchRequests.Add(u);
                 }
             }
+            //If the user has no match requests at all, show a notification on the page stating so.
             else
             {
                 noMatches.IsVisible = true;
             }
         }
 
+        //If the user clicks one of the match requests loaded on the page, the app will
+        //redirect them to that user's page.
         public void UserClicked(object sender, ItemTappedEventArgs e)
         {
             User u = (User)e.Item;

@@ -11,10 +11,12 @@ namespace LoginNavigation
         {
             InitializeComponent();
 
+            //Loads the user's description if they already have one saved to their profile
             if (!String.IsNullOrEmpty(App.UserLoggedIn.Description))
                 descriptionEditor.Text = App.UserLoggedIn.Description;
         }
 
+        //Saves the user's information they have inputted
         async void OnNextButtonClicked(object sender, EventArgs e)
         {
             App.UserLoggedIn.Description = descriptionEditor.Text;

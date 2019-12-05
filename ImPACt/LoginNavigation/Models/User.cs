@@ -11,10 +11,17 @@ namespace LoginNavigation.Models
 {
     public class User : INotifyPropertyChanged
     {
+        //Unique identifier for each user
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
+
+        //The email the user is registered with
         public string Email { get; set; }
+
+        //The user's password, used when they log in
         public string Password { get; set; }
+
+        //Personal information about the user
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string State { get; set; }
@@ -24,6 +31,8 @@ namespace LoginNavigation.Models
         public string Role { get; set; }
         public string Birth { get; set; }
         public string University { get; set; }
+
+        //A description the user writes to describe theirself.
         public string Description { get; set; }
         //A list of the user's interests, separated by the delimiter ^
         public string Interests { get; set; }
@@ -55,6 +64,7 @@ namespace LoginNavigation.Models
             }
         }
 
+        //Function used to determine if one user equals another
         public override bool Equals(object obj)
         {
             User user = (User)obj;
