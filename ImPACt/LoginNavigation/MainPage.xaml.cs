@@ -8,6 +8,7 @@ namespace LoginNavigation
     {
 
         public MatchesPage currentMatchesPage { get; set; }
+        //Constructor which sets the current view to be a MatchesPage, but leaves the navigation bar at the bottom of the app.
         public MainPage()
         {
             InitializeComponent();

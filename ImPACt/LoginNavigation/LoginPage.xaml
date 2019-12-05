@@ -1,7 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.LoginPage">
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="LoginNavigation.LoginPage">
+    <!-- Toolbar Item at the top of the page.  When the Toolbar item is clicked, 
+    it calls the OnSignUpButtonClicked function in the .cs page attached, which takes you to the SignUp page.-->
     <ContentPage.ToolbarItems>
-		<ToolbarItem Text="Sign Up" Clicked="OnSignUpButtonClicked" />
+		<ToolbarItem Text="Sign Up" 
+                     Clicked="OnSignUpButtonClicked" />
 	</ContentPage.ToolbarItems>
     <ContentPage.Content>
 		<Grid>
@@ -16,20 +21,62 @@
                 <ColumnDefinition Width="0.7*"/>
                 <ColumnDefinition Width="0.15*"/>
             </Grid.ColumnDefinitions>
-            <Image Grid.RowSpan="4" Grid.ColumnSpan="3"
-                Aspect="AspectFill"
-                Source="backimage.jpg"
-                RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
-                RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <Image Grid.RowSpan="4" 
+                   Grid.ColumnSpan="3"
+                   Aspect="AspectFill"
+                   Source="backimage.jpg"
+                   RelativeLayout.WidthConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                   RelativeLayout.HeightConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height}">
             </Image>
-            <Label Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="54" FontAttributes="Bold" TextColor="#7425db" Text="ImPACt"/>
+            <Label Grid.Row="1" 
+                   Grid.Column="1" 
+                   HorizontalTextAlignment="Center" 
+                   FontSize="54" 
+                   FontAttributes="Bold" 
+                   TextColor="#7425db" 
+                   Text="ImPACt"/>
                 
-            <BoxView Grid.Row="2" Grid.Column="1" Color="White" CornerRadius="10" HorizontalOptions="FillAndExpand"/>
-            <StackLayout Grid.Row="2" Grid.Column="1" Margin="32,32,32,32">
-                <Entry x:Name="emailEntry" Placeholder="Email" VerticalOptions="Center"/>
-			    <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" VerticalOptions="Center" Margin="0,0,0,10"/>
-			    <Button Text="Login" Clicked="OnLoginButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,0" FontAttributes="Bold" />
-                <Button Text="Forgot Password" Clicked="OnForgotPassword" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="25" HorizontalOptions="Center" VerticalOptions="Center" Padding="30,0" FontAttributes="Bold"/>
+            <BoxView Grid.Row="2" 
+                     Grid.Column="1" 
+                     Color="White" 
+                     CornerRadius="10" 
+                     HorizontalOptions="FillAndExpand"/>
+            <StackLayout Grid.Row="2" 
+                         Grid.Column="1" 
+                         Margin="32,32,32,32">
+                <!-- The Entry Box to type in the email address used to login to the app. -->
+                <Entry x:Name="emailEntry" 
+                       Placeholder="Email" 
+                       VerticalOptions="Center"/>
+                <!-- The Entry Box used to type in the Password used to login to the app, 
+                set to visually mask the characters typed in-->
+                <Entry x:Name="passwordEntry" 
+                       IsPassword="true" 
+                       Placeholder="Password" 
+                       VerticalOptions="Center" 
+                       Margin="0,0,0,10"/>
+                <!-- The login button.  When clicked, it calls the OnLoginButtonClicked function
+                defined in the attached .cs file, which attempts to log the user in using the previously typed credentials.-->
+                <Button Text="Login" 
+                        Clicked="OnLoginButtonClicked" 
+                        BackgroundColor="#4fa8e8" 
+                        TextColor="White" 
+                        CornerRadius="25" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center" 
+                        Padding="30,0" 
+                        FontAttributes="Bold" />
+                <!-- The Forgot Password button.  When clicked, it calls the OnForgotPassword function
+                defined in the attached .cs file, which brings you to the ForgotPassword page.-->
+                <Button Text="Forgot Password" 
+                        Clicked="OnForgotPassword" 
+                        BackgroundColor="#4fa8e8" 
+                        TextColor="White" 
+                        CornerRadius="25" 
+                        HorizontalOptions="Center" 
+                        VerticalOptions="Center" 
+                        Padding="30,0" 
+                        FontAttributes="Bold"/>
 			    <Label x:Name="messageLabel" HorizontalTextAlignment="Center"/>
             </StackLayout>
 		</Grid>

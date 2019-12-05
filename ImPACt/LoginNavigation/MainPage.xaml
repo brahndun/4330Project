@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:LoginNavigation;assembly=LoginNavigation" x:Class="LoginNavigation.MainPage">
-    
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+            xmlns:local="clr-namespace:LoginNavigation;assembly=LoginNavigation" 
+            x:Class="LoginNavigation.MainPage">
+    <!-- Sets up the Navigation bar at the bottom of the app.  Sets the Matches page to be the default view of the app. -->
     <NavigationPage IconImageSource="matchicon2.png" Title="Matches">
         <x:Arguments>
             <local:MatchesPage x:Name="curMatchPage"/>
@@ -14,5 +17,6 @@
     </NavigationPage>
 
     <local:FeedPage IconImageSource="feedicon.png" Title="Feed"/>
+    
     <local:SettingsPage IconImageSource="settingsicon.png" Title="Settings"/>
 </TabbedPage>

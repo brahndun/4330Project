@@ -9,11 +9,14 @@ namespace LoginNavigation
 {
     public partial class NewPassword : ContentPage
     {
+        //Constructor for a NewPassword page.
         public NewPassword()
         {
             InitializeComponent();
         }
-
+        //The function mapped to the Change Password button.
+        //It checks to see if the two passwords entered match and meets the required minimum length,
+        //if they return valid, the new password is updated in the database.
         public async void ChangePassword(object sender, EventArgs e)
         {
             if (IsValid())

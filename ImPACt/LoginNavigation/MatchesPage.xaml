@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage NavigationPage.HasNavigationBar="False" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.MatchesPage" Title="Matches">
+<ContentPage NavigationPage.HasNavigationBar="False" 
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="LoginNavigation.MatchesPage" 
+             Title="Matches">
     <ContentPage.Content>
         <Grid Margin="24,24,24,24">
             <Grid.RowDefinitions>
@@ -19,11 +23,26 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
-
+                <!-- The display of the Match's Profile Picture -->
                 <Image x:Name="matchImage" Aspect="AspectFit"/>
-                <Label FontAttributes="Bold" FontSize="Large" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1" x:Name="matchName"/>
-                <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Row = "2" x:Name = "matchDescription" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."/>
-                <Label VerticalOptions="Center" HorizontalOptions="Center" Grid.Row = "3" x:Name="matchInterests"/>
+                <!-- The Label that fills in the Match's Name -->
+                <Label FontAttributes="Bold" 
+                       FontSize="Large" 
+                       VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       Grid.Row="1" 
+                       x:Name="matchName"/>
+                <!-- The Label that fills in the Match's Description -->
+                <Label VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       Grid.Row = "2" 
+                       x:Name = "matchDescription" 
+                       Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."/>
+                <!-- The Label that fills in the Match's Interests -->
+                <Label VerticalOptions="Center" 
+                       HorizontalOptions="Center" 
+                       Grid.Row = "3" 
+                       x:Name="matchInterests"/>
             </Grid>
             <Grid Grid.Row="1" x:Name="bottomGrid">
                 <Grid.RowDefinitions>
@@ -34,10 +53,43 @@
                     <ColumnDefinition Width="0.6*"/>
                     <ColumnDefinition Width="0.2*"/>
                 </Grid.ColumnDefinitions>
-
-                <Button x:Name="backButton" VerticalOptions="Center" HorizontalOptions="Start" Text="Back" Clicked="OnBackButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="16" Padding="15,0" FontAttributes="Bold"/>
-                <Button VerticalOptions="Center" HorizontalOptions="Center" Grid.Column="1" Text="Request to connect" x:Name="requestButton" Clicked="OnRequestButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="16" Padding="15,0" FontAttributes="Bold"/>
-                <Button x:Name="nextButton" VerticalOptions="Center" HorizontalOptions="End" Grid.Column="2" Text="Next" Clicked="OnNextButtonClicked" BackgroundColor="#4fa8e8" TextColor="White" CornerRadius="16" Padding="15,0" FontAttributes="Bold"/>
+                <!-- The Back Button.  When clicked, it calls the "OnBackButtonClicked" function defined in the attached .cs file.-->
+                <Button x:Name="backButton" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Start" 
+                        Text="Back" 
+                        Clicked="OnBackButtonClicked" 
+                        BackgroundColor="#4fa8e8" 
+                        TextColor="White" 
+                        CornerRadius="16" 
+                        Padding="15,0" 
+                        FontAttributes="Bold"/>
+                <!-- The button clicked to request a connection.  When clicked, it calls the "OnRequestButtonClicked" function,
+                defined in the attached .cs file.  The request to connect is sent to the database.-->
+                <Button VerticalOptions="Center" 
+                        HorizontalOptions="Center" 
+                        Grid.Column="1" 
+                        Text="Request to connect" 
+                        x:Name="requestButton" 
+                        Clicked="OnRequestButtonClicked" 
+                        BackgroundColor="#4fa8e8" 
+                        TextColor="White" 
+                        CornerRadius="16" 
+                        Padding="15,0" 
+                        FontAttributes="Bold"/>
+                <!-- The Next button.  When clicked, it calls the "OnNextButtonClicked" function defined in the attached .cs file.
+                The page tabs over to the next generated match.-->
+                <Button x:Name="nextButton" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="End" 
+                        Grid.Column="2" 
+                        Text="Next" 
+                        Clicked="OnNextButtonClicked" 
+                        BackgroundColor="#4fa8e8" 
+                        TextColor="White" 
+                        CornerRadius="16" 
+                        Padding="15,0" 
+                        FontAttributes="Bold"/>
             </Grid>
         </Grid>
     </ContentPage.Content>

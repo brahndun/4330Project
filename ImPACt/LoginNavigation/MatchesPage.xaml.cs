@@ -19,6 +19,7 @@ namespace LoginNavigation
         //When it's true, the next and back buttons operate a bit differently
         bool justRemovedMatch = false;
 
+        //Constructor for the Matches page, which calls the relevent functions to generate the matches.
         public MatchesPage()
         {
             InitializeComponent();
@@ -26,6 +27,7 @@ namespace LoginNavigation
             NavigationPage.SetHasBackButton(this, false);
             
         }
+        //Loads all available matches.
         public async void LoadMatches()
         {
             if (allUsers == null)
@@ -58,7 +60,7 @@ namespace LoginNavigation
                 //in the loop
                 List<String> tempInterests;
                 int hits;
-
+                //Cycles through all the interests and increments "hits" for each matched interest.
                 for (int i = 0; i < allUsers.Count; i++)
                 {
                     hits = 0;
@@ -70,10 +72,10 @@ namespace LoginNavigation
                     }
                     dict.Add(allUsers[i].ID, hits);
                 }
-
+                //Sorts the users based on the max number of interests in common.
                 allUsers.Sort((x, y) => dict[x.ID] > dict[y.ID] ? -1 : dict[x.ID] < dict[y.ID] ? 1 : 0);
             }
-                
+            //Sets back button and next button visibility.    
             if (matchIndex == 0)
                 backButton.IsVisible = false;
             if (matchIndex >= allUsers.Count - 1)
@@ -104,7 +106,8 @@ namespace LoginNavigation
             }
 
 
-
+            //Populates the information for the current match into the .xaml page, if there are no generated match, 
+            //the app shows "No valid mentees/mentors in the system".
             if (allUsers.Count > 0)
             {
                 matchImage.Source = ImageSource.FromStream(() => new MemoryStream(allUsers[matchIndex].ProfilePic));
@@ -130,6 +133,8 @@ namespace LoginNavigation
 
 
         }
+
+        //The function mapped to the next button in the .xaml page.
         async void OnNextButtonClicked(object sender, EventArgs e)
         {
             //Since Xamarin decided that double tapping a tab pops back to the root
@@ -138,7 +143,7 @@ namespace LoginNavigation
             if (matchName.Text != allUsers[matchIndex].FullName && !justRemovedMatch)
                 matchIndex = 0;
 
-
+            //Switches the page to the next generated match, setting the proper match index.
             if (matchIndex < allUsers.Count - 1 || justRemovedMatch)
             {
                 if (!justRemovedMatch)
@@ -159,6 +164,7 @@ namespace LoginNavigation
             }
         }
 
+        //The function that is called when the back button from the .xaml form is selected.
         async void OnBackButtonClicked(object sender, EventArgs e)
         {
             if (matchIndex > 0)
@@ -168,6 +174,9 @@ namespace LoginNavigation
             }
         }
 
+        //The function that is called when the Request Match button is clicked on the .xaml form.
+        //It adds the requested Match to the user's list of sent requests and send the request to the 
+        //other user's list of match requests.
         async void OnRequestButtonClicked(object sender, EventArgs e)
         {
             ChangeRequestButtonToRequestSent();
@@ -180,6 +189,7 @@ namespace LoginNavigation
             await App.Database.SaveUserAsync(allUsers[matchIndex]);
         }
 
+        //Changes the look of the Request Match button after the button is clicked.
         void ChangeRequestButtonToRequestSent()
         {
             bottomGrid.Children.Remove(requestButton);
@@ -190,6 +200,7 @@ namespace LoginNavigation
             }, 1, 0);
         }
 
+        //Sets the Request Match button to an Accept Match button. 
         void ChangeRequestButtonToAcceptRequest()
         {
             bottomGrid.Children.Remove(requestButton);
@@ -209,6 +220,7 @@ namespace LoginNavigation
             requestButton = button;
         }
 
+        //The function that is called when the Accept Request button is clicked.
         public async void AcceptMatchRequest(object sender, EventArgs e)
         {
 
@@ -280,7 +292,7 @@ namespace LoginNavigation
             }
 
         }
-
+        //Resets the matchIndex and all users list to zero and null, respectively.
         public void Reset()
         {
             matchIndex = 0;

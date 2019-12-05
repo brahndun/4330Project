@@ -10,6 +10,7 @@ namespace LoginNavigation
 {
     public partial class MakeProfilePage : ContentPage
     {
+        //Constructor for the Profile Page Entry Form.
         public MakeProfilePage()
         {
             InitializeComponent();
@@ -55,6 +56,7 @@ namespace LoginNavigation
             }
         }
 
+        //Checks each entry in the form to see if it is valid.
         bool isFormValid()
         {
             //Used when determining if the birth date given is in mm/dd/yyyy format
@@ -63,7 +65,7 @@ namespace LoginNavigation
             //has incorrect information, valid will be turned to false.
             bool valid = true;
 
-
+            //Checks each entry in the form for validity
             if (String.IsNullOrEmpty(firstNameEntry.Text))
                 valid = false;
             else if (String.IsNullOrEmpty(lastNameEntry.Text))
