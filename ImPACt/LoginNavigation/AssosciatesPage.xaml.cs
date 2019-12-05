@@ -16,24 +16,32 @@ namespace LoginNavigation
         {
             InitializeComponent();
 
+            //Creates an event that calls OnAssociatesChanged whenever the logged in
+            //user's list of associates changes.
             App.UserLoggedIn.PropertyChanged += OnAssociatesChanged;
 
+            //Loads the user's associates onto the page.
             LoadItems();
 
+            //Xamarin requires this to display the data.
             BindingContext = this;
 
         }
 
+        //Whenever the logged in user's associates list changes, the list on this page changes as well
         public async void OnAssociatesChanged(object sender, PropertyChangedEventArgs e)
         {
             LoadItems();
         }
-        
+
+        //Load the logged in user's associates onto the page.
         public async void LoadItems()
         {
+            //If the page's associates list is currently empty, create a new list.
             if (Associates == null)
                 Associates = new ObservableCollection<User>();
 
+            //If the user has associates, add them to the page.
             if (!String.IsNullOrEmpty(App.UserLoggedIn.Associates))
             {
                 noAssociates.IsVisible = false;
@@ -44,7 +52,6 @@ namespace LoginNavigation
 
                 for (int i = 0; i < associates.Count - 1; i++)
                 {
-                    Console.WriteLine("val: " + associates[i]);
                     int val = Convert.ToInt32(associates[i]);
                     var u = await App.Database.GetUserAsync(val);
                     if (!Associates.Contains(u))

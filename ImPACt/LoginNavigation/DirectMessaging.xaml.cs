@@ -12,19 +12,11 @@ namespace LoginNavigation
             InitializeComponent();
         }
 
+        //When the send button is pressed, send the message to the other user.
         public void SendMessage(object sender, EventArgs e)
         {
-            /*
-             * <Frame BackgroundColor="#4fa8e8"
-                   Grid.Row="1"
-                   Margin="0,0,0,15"
-                   WidthRequest="180"
-                   CornerRadius="10"
-                   HorizontalOptions="Start"
-                   HasShadow="True">
-                <Label Text="You're welcome. I'm looking forward to working together." />
-            </Frame> */
 
+            //Creates a new text message with the content from the message editor
             Frame frame = new Frame()
             {
                 Margin = new Thickness(0, 0, 0, 15),
@@ -38,6 +30,7 @@ namespace LoginNavigation
 
             messageStackLayout.Children.Add(frame);
 
+            //Empty the editor
             newMessageEditor.Text = String.Empty;
         }
     }

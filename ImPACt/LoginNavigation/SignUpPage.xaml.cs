@@ -19,11 +19,6 @@ namespace LoginNavigation
             var user = new User();
             user.Email = emailEntry.Text;
             user.Password = passwordEntry.Text;
-            /*User user = new User()
-            {
-                Password = passwordEntry.Text,
-                Email = emailEntry.Text
-            };*/
 
             // Sign up logic goes here
 
@@ -33,8 +28,6 @@ namespace LoginNavigation
                 var rootPage = Navigation.NavigationStack.FirstOrDefault();
                 if (rootPage != null)
                 {
-                    //This should be uploaded to database
-                    //RegisteredUsers.registeredUsers.Add(user);
                     await App.Database.SaveUserAsync(user);
                     App.IsUserLoggedIn = true;
                     App.UserLoggedIn = user;
@@ -44,6 +37,7 @@ namespace LoginNavigation
             }
         }
 
+        //Checks to make sure if the information the user entered is valid
         bool AreDetailsValid(User user, List<User> allUsers)
         {
             bool valid = false;

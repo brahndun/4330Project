@@ -9,7 +9,10 @@ namespace LoginNavigation
 {
     public partial class MatchesPage : ContentPage
     {
+        //The index of the current match the user is viewing
         static int matchIndex;
+
+        //A list containing all the user's matches
         static List<User> allUsers;
 
         //Set to true when a match has just been removed from the match list.
@@ -19,11 +22,11 @@ namespace LoginNavigation
         public MatchesPage()
         {
             InitializeComponent();
-            TestDatabase();
+            LoadMatches();
             NavigationPage.SetHasBackButton(this, false);
             
         }
-        public async void TestDatabase()
+        public async void LoadMatches()
         {
             if (allUsers == null)
             {

@@ -13,6 +13,8 @@ namespace LoginNavigation
         public MakeProfilePage()
         {
             InitializeComponent();
+
+            //Loads the user's current information into the entry fields.
             firstNameEntry.Text = App.UserLoggedIn.FirstName;
             lastNameEntry.Text = App.UserLoggedIn.LastName;
             stateEntry.Text = App.UserLoggedIn.State;
@@ -27,10 +29,13 @@ namespace LoginNavigation
 
         }
 
+        //When the next button is clicked, updates the user's information if the information is valid
         async void OnNextButtonClicked(object sender, EventArgs e)
         {
+            //Checks to ensure all information entered is valid
             if (isFormValid())
             {
+                //Updates all the user's information
                 User u = App.UserLoggedIn; //shorthand
                 u.FirstName = firstNameEntry.Text;
                 u.LastName = lastNameEntry.Text;
