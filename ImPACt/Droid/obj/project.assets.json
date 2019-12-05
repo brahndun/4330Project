@@ -2328,32 +2328,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/Sarah/.nuget/packages/": {}
+    "C:\\Users\\a58ho\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj",
+      "projectUniqueName": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\Droid\\LoginNavigation.Droid.csproj",
       "projectName": "LoginNavigation.Droid",
-      "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/Droid/LoginNavigation.Droid.csproj",
-      "packagesPath": "/Users/Sarah/.nuget/packages/",
-      "outputPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/Droid/obj/",
+      "projectPath": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\Droid\\LoginNavigation.Droid.csproj",
+      "packagesPath": "C:\\Users\\a58ho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\Droid\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/Sarah/.config/NuGet/NuGet.Config"
+        "C:\\Users\\a58ho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
-              "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj"
+            "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj": {
+              "projectPath": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj"
             }
           }
         }

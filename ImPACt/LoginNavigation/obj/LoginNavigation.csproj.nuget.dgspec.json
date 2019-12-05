@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {}
+    "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj": {}
   },
   "projects": {
-    "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj": {
+    "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
+        "projectUniqueName": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj",
         "projectName": "LoginNavigation",
-        "projectPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/LoginNavigation.csproj",
-        "packagesPath": "/Users/Sarah/.nuget/packages/",
-        "outputPath": "/Users/Sarah/Documents/GitHub/4330Project/ImPACt/LoginNavigation/obj/",
+        "projectPath": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj",
+        "packagesPath": "C:\\Users\\a58ho\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "/Users/Sarah/.config/NuGet/NuGet.Config"
+          "C:\\Users\\a58ho\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -88,7 +92,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.0.100/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

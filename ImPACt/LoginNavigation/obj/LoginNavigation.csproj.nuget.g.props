@@ -4,20 +4,20 @@
     <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
     <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
     <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
-    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">/Users/Sarah/.nuget/packages/</NuGetPackageRoot>
-    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">/Users/Sarah/.nuget/packages/;/usr/local/share/dotnet/sdk/NuGetFallbackFolder</NuGetPackageFolders>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\a58ho\.nuget\packages\;C:\Microsoft\Xamarin\NuGet\;C:\Program Files\dotnet\sdk\NuGetFallbackFolder</NuGetPackageFolders>
     <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
-    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.3.0</NuGetToolVersion>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">5.3.1</NuGetToolVersion>
   </PropertyGroup>
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <Import Project="$(NuGetPackageRoot)xamarin.forms/4.1.0.555618/build/Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms/4.1.0.555618/build/Xamarin.Forms.props')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.forms\4.1.0.555618\build\Xamarin.Forms.props" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\4.1.0.555618\build\Xamarin.Forms.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">/Users/Sarah/.nuget/packages/jquery/1.12.4</PkgjQuery>
-    <PkgjQuery_UI_Combined Condition=" '$(PkgjQuery_UI_Combined)' == '' ">/Users/Sarah/.nuget/packages/jquery.ui.combined/1.12.1</PkgjQuery_UI_Combined>
-    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">/Users/Sarah/.nuget/packages/newtonsoft.json/9.0.1</PkgNewtonsoft_Json>
+    <PkgjQuery Condition=" '$(PkgjQuery)' == '' ">C:\Users\a58ho\.nuget\packages\jquery\1.12.4</PkgjQuery>
+    <PkgjQuery_UI_Combined Condition=" '$(PkgjQuery_UI_Combined)' == '' ">C:\Users\a58ho\.nuget\packages\jquery.ui.combined\1.12.1</PkgjQuery_UI_Combined>
+    <PkgNewtonsoft_Json Condition=" '$(PkgNewtonsoft_Json)' == '' ">C:\Users\a58ho\.nuget\packages\newtonsoft.json\9.0.1</PkgNewtonsoft_Json>
   </PropertyGroup>
 </Project>

@@ -255,6 +255,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -300,6 +321,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.13": {
@@ -392,6 +426,19 @@
           }
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/4.1.0.555618": {
         "type": "package",
         "dependencies": {
@@ -422,7 +469,9 @@
         "dependencies": {
           "DLToolkit.Forms.Controls.TagEntryView": "1.0.5",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "SQLiteNetExtensions": "2.1.0",
           "TagIt": "2.0.110.4",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "4.1.0.555618",
           "jQuery.UI.Combined": "1.12.1",
           "sqlite-net-pcl": "1.6.292"
@@ -690,6 +739,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -911,6 +981,19 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.13": {
         "type": "package",
         "dependencies": {
@@ -979,6 +1062,19 @@
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/4.1.0.555618": {
         "type": "package",
         "dependencies": {
@@ -1009,7 +1105,9 @@
         "dependencies": {
           "DLToolkit.Forms.Controls.TagEntryView": "1.0.5",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "SQLiteNetExtensions": "2.1.0",
           "TagIt": "2.0.110.4",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "4.1.0.555618",
           "jQuery.UI.Combined": "1.12.1",
           "sqlite-net-pcl": "1.6.292"
@@ -1277,6 +1375,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -1499,6 +1618,19 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.13": {
         "type": "package",
         "dependencies": {
@@ -1567,6 +1699,19 @@
           "runtimes/win10-arm/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/4.1.0.555618": {
         "type": "package",
         "dependencies": {
@@ -1597,7 +1742,9 @@
         "dependencies": {
           "DLToolkit.Forms.Controls.TagEntryView": "1.0.5",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "SQLiteNetExtensions": "2.1.0",
           "TagIt": "2.0.110.4",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "4.1.0.555618",
           "jQuery.UI.Combined": "1.12.1",
           "sqlite-net-pcl": "1.6.292"
@@ -1864,6 +2011,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -1909,6 +2077,19 @@
         },
         "runtime": {
           "lib/netstandard1.1/SQLite-net.dll": {}
+        }
+      },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_green/1.1.13": {
@@ -1973,6 +2154,19 @@
           "lib/uap10.0/Microsoft.Graphics.Canvas.winmd": {}
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/4.1.0.555618": {
         "type": "package",
         "dependencies": {
@@ -2003,7 +2197,9 @@
         "dependencies": {
           "DLToolkit.Forms.Controls.TagEntryView": "1.0.5",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "SQLiteNetExtensions": "2.1.0",
           "TagIt": "2.0.110.4",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "4.1.0.555618",
           "jQuery.UI.Combined": "1.12.1",
           "sqlite-net-pcl": "1.6.292"
@@ -2271,6 +2467,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -2492,6 +2709,19 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.13": {
         "type": "package",
         "dependencies": {
@@ -2560,6 +2790,19 @@
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/4.1.0.555618": {
         "type": "package",
         "dependencies": {
@@ -2590,7 +2833,9 @@
         "dependencies": {
           "DLToolkit.Forms.Controls.TagEntryView": "1.0.5",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "SQLiteNetExtensions": "2.1.0",
           "TagIt": "2.0.110.4",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "4.1.0.555618",
           "jQuery.UI.Combined": "1.12.1",
           "sqlite-net-pcl": "1.6.292"
@@ -2858,6 +3103,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -3080,6 +3346,19 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.13": {
         "type": "package",
         "dependencies": {
@@ -3148,6 +3427,19 @@
           "runtimes/win10-x64/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/4.1.0.555618": {
         "type": "package",
         "dependencies": {
@@ -3178,7 +3470,9 @@
         "dependencies": {
           "DLToolkit.Forms.Controls.TagEntryView": "1.0.5",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "SQLiteNetExtensions": "2.1.0",
           "TagIt": "2.0.110.4",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "4.1.0.555618",
           "jQuery.UI.Combined": "1.12.1",
           "sqlite-net-pcl": "1.6.292"
@@ -3446,6 +3740,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -3667,6 +3982,19 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.13": {
         "type": "package",
         "dependencies": {
@@ -3735,6 +4063,19 @@
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/4.1.0.555618": {
         "type": "package",
         "dependencies": {
@@ -3765,7 +4106,9 @@
         "dependencies": {
           "DLToolkit.Forms.Controls.TagEntryView": "1.0.5",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "SQLiteNetExtensions": "2.1.0",
           "TagIt": "2.0.110.4",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "4.1.0.555618",
           "jQuery.UI.Combined": "1.12.1",
           "sqlite-net-pcl": "1.6.292"
@@ -4033,6 +4376,27 @@
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
       },
+      "Newtonsoft.Json/9.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Plugin.Permissions/3.0.0.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Permissions.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.2.0.223": {
         "type": "package",
         "dependencies": {
@@ -4255,6 +4619,19 @@
           "lib/netstandard1.1/SQLite-net.dll": {}
         }
       },
+      "SQLiteNetExtensions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "9.0.1",
+          "sqlite-net-pcl": "1.4.118"
+        },
+        "compile": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLiteNetExtensions.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_green/1.1.13": {
         "type": "package",
         "dependencies": {
@@ -4323,6 +4700,19 @@
           "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll": {}
         }
       },
+      "Xam.Plugin.Media/4.0.1.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.3",
+          "Plugin.Permissions": "3.0.0.12"
+        },
+        "compile": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.10240/Plugin.Media.dll": {}
+        }
+      },
       "Xamarin.Forms/4.1.0.555618": {
         "type": "package",
         "dependencies": {
@@ -4353,7 +4743,9 @@
         "dependencies": {
           "DLToolkit.Forms.Controls.TagEntryView": "1.0.5",
           "Rg.Plugins.Popup": "1.2.0.223",
+          "SQLiteNetExtensions": "2.1.0",
           "TagIt": "2.0.110.4",
+          "Xam.Plugin.Media": "4.0.1.5",
           "Xamarin.Forms": "4.1.0.555618",
           "jQuery.UI.Combined": "1.12.1",
           "sqlite-net-pcl": "1.6.292"
@@ -6868,6 +7260,56 @@
         "netstandard.library.nuspec"
       ]
     },
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
+      "type": "package",
+      "path": "newtonsoft.json/9.0.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.9.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "tools/install.ps1"
+      ]
+    },
+    "Plugin.Permissions/3.0.0.12": {
+      "sha512": "VrYqI/ufk3bH6gTP1JJlLByjhS0CHu3riKmdozhX9/qXA9hlvLolmcqKJdyAqpzmrVC74m3ZtirUBIrBxvT1Lw==",
+      "type": "package",
+      "path": "plugin.permissions/3.0.0.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/Plugin.Permissions.dll",
+        "lib/monoandroid71/Plugin.Permissions.xml",
+        "lib/netstandard1.0/Plugin.Permissions.dll",
+        "lib/netstandard1.0/Plugin.Permissions.xml",
+        "lib/netstandard2.0/Plugin.Permissions.dll",
+        "lib/netstandard2.0/Plugin.Permissions.xml",
+        "lib/uap10.0.10240/Plugin.Permissions.dll",
+        "lib/uap10.0.10240/Plugin.Permissions.pri",
+        "lib/uap10.0.10240/Plugin.Permissions.xml",
+        "lib/xamarinios10/Plugin.Permissions.dll",
+        "lib/xamarinios10/Plugin.Permissions.xml",
+        "plugin.permissions.3.0.0.12.nupkg.sha512",
+        "plugin.permissions.nuspec",
+        "readme.txt"
+      ]
+    },
     "Rg.Plugins.Popup/1.2.0.223": {
       "sha512": "0ruzj7EedYRUhhsk327z7ymaHzf9E/n6Slg2ZJfOYqtZ14tX1dtWbyNRSmGEnWxLyN1qSq4Od4U6vYupHRpdtw==",
       "type": "package",
@@ -8045,6 +8487,35 @@
         "sqlite-net-pcl.nuspec"
       ]
     },
+    "SQLiteNetExtensions/2.1.0": {
+      "sha512": "oiyhVxCi7M2nr3tI6h05jdHGT0HKW6GxMNKUiO04zWAxv42MHtX12c4tW67w6VqGwcnXj1bwyTpq9P0W8QoGYQ==",
+      "type": "package",
+      "path": "sqlitenetextensions/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard1.1/SQLiteNetExtensions.dll",
+        "lib/netstandard1.1/SQLiteNetExtensions.pdb",
+        "sqlitenetextensions.2.1.0.nupkg.sha512",
+        "sqlitenetextensions.nuspec",
+        "src/SQLiteNetExtensions/Attributes/CascadeOperation.cs",
+        "src/SQLiteNetExtensions/Attributes/ForeignKeyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/ManyToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToManyAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/OneToOneAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/RelationshipAttribute.cs",
+        "src/SQLiteNetExtensions/Attributes/TextBlobAttribute.cs",
+        "src/SQLiteNetExtensions/Exceptions/IncorrectRelationshipException.cs",
+        "src/SQLiteNetExtensions/Extensions/ReadOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/ReflectionExtensions.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/ITextBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/Serializers/JsonBlobSerializer.cs",
+        "src/SQLiteNetExtensions/Extensions/TextBlob/TextBlobOperations.cs",
+        "src/SQLiteNetExtensions/Extensions/WriteOperations.cs",
+        "src/SQLiteNetExtensions/Properties/AssemblyInfo.cs"
+      ]
+    },
     "SQLitePCLRaw.bundle_green/1.1.13": {
       "sha512": "E0Hm/XTfleE/LlrRZVucB1dQqDlIDPgqvkFymbGqMO7bSaoB6R2X5Cgzq/RDxBFSzHjpzet2Tp5Kar8faLSZ+Q==",
       "type": "package",
@@ -8177,6 +8648,31 @@
         "runtimes/win10-x86/native/Microsoft.Graphics.Canvas.dll",
         "win2d.uwp.1.20.0.nupkg.sha512",
         "win2d.uwp.nuspec"
+      ]
+    },
+    "Xam.Plugin.Media/4.0.1.5": {
+      "sha512": "a5l/M2Tl06BqBX/uhM/pr+q1jDkh2tRQr5Ne9rjAuD9VYn5STE+7kVFTzIUNPMnMr9PZLJkWP5WAr/tBN5oepw==",
+      "type": "package",
+      "path": "xam.plugin.media/4.0.1.5",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid71/Plugin.Media.dll",
+        "lib/monoandroid71/Plugin.Media.xml",
+        "lib/netstandard1.0/Plugin.Media.dll",
+        "lib/netstandard1.0/Plugin.Media.xml",
+        "lib/netstandard2.0/Plugin.Media.dll",
+        "lib/netstandard2.0/Plugin.Media.xml",
+        "lib/tizen40/Plugin.Media.dll",
+        "lib/tizen40/Plugin.Media.xml",
+        "lib/uap10.0.10240/Plugin.Media.dll",
+        "lib/uap10.0.10240/Plugin.Media.pri",
+        "lib/uap10.0.10240/Plugin.Media.xml",
+        "lib/xamarinios10/Plugin.Media.dll",
+        "lib/xamarinios10/Plugin.Media.xml",
+        "readme.txt",
+        "xam.plugin.media.4.0.1.5.nupkg.sha512",
+        "xam.plugin.media.nuspec"
       ]
     },
     "Xamarin.Forms/4.1.0.555618": {
@@ -8439,18 +8935,18 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Toshiba\\.nuget\\packages\\": {},
+    "C:\\Users\\a58ho\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\UWP\\LoginNavigation.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\UWP\\LoginNavigation.UWP.csproj",
       "projectName": "LoginNavigation.UWP",
-      "projectPath": "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\UWP\\LoginNavigation.UWP.csproj",
-      "packagesPath": "C:\\Users\\Toshiba\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\UWP\\obj\\",
+      "projectPath": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\UWP\\LoginNavigation.UWP.csproj",
+      "packagesPath": "C:\\Users\\a58ho\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -8458,7 +8954,7 @@
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Toshiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\a58ho\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -8472,8 +8968,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj": {
-              "projectPath": "C:\\Users\\Toshiba\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj"
+            "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj": {
+              "projectPath": "C:\\Users\\a58ho\\Documents\\GitHub\\4330Project\\ImPACt\\LoginNavigation\\LoginNavigation.csproj"
             }
           }
         }

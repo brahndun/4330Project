@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage NavigationPage.HasNavigationBar="False" xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="LoginNavigation.ActiveMatchesPage">
+<ContentPage NavigationPage.HasNavigationBar="False" 
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="LoginNavigation.ActiveMatchesPage">
+    <!-- The beginning of the content of the Active Matches page-->
     <ContentPage.Content>
          <Grid Margin="24,24,24,24">
             <Grid.RowDefinitions>
@@ -10,7 +14,11 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Label Text="Active match requests"/> 
+            <Label Text="Active match requests"/>
+            <!--A list view where the item source is bound to MatchRequests, 
+             an ObservableCollection of the User Model, 
+             and an the UserClicked function upon tapping the item 
+             both defined in in the attached .cs file -->
             <ListView Grid.Row="1"
                       ItemsSource="{Binding MatchRequests}"
                       HasUnevenRows="true"
@@ -26,6 +34,7 @@
                                     <ColumnDefinition Width="0.7*" />
                                     <ColumnDefinition Width="0.3*"/>
                                 </Grid.ColumnDefinitions>
+                                <!-- A label that is bound to the FullName attribute in the User Model -->
                                 <Label Text="{Binding FullName}" VerticalOptions="End"/>
                                 <Label Text="View > " Grid.Column="1" HorizontalOptions="End" VerticalOptions="End"/>
                             </Grid>
